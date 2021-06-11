@@ -31,7 +31,14 @@
 
       Update json file ../test-helpers/test-data/loginCredentials.js
 
-      Add in .env file the user emails and Password for users
+      create .env file the user emails and Password for users withe below naming and format 
+      zomatoURL='http://www.zomato.com'
+      gmail=
+      gmailpassword=
+      email=
+      password=
+      outlookUrl=
+
 
 ------------------------------------------------
 * To Update Test data for Booked Restaurant :
