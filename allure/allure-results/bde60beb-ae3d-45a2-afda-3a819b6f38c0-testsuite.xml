@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611071176982' stop='1611071176997'>
+    <name>Migrate using SSO User </name>
+    <title>Migrate using SSO User </title>
+    <test-cases>
+        <test-case start='1611071176982' status='failed' stop='1611071228808'>
+            <name>----- As an SSO user with DS I should  be able to start a migration if I have CLM access -----</name>
+            <title>----- As an SSO user with DS I should  be able to start a migration if I have CLM access -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || As an SSO user with DS I should be able to start a migration if I have access to instance '/>
+                <label name='story' value='Migrate using SSO User '/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || As an SSO user with DS I should be able to start a migration if I have access to instance '/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16313'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-427'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected false to deeply equal true</message>
+                <stack-trace>AssertionError: expected false to deeply equal true
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   52 |    await
+                   53 |      t.expect(true).eql(true)
+                   54 |  }
+                   55 |  else {
+                   56 |    await
+                 > 57 |      t.expect(false).eql(true)
+                   58 |  }
+                   59 |}
+                   60 |
+                   61 |export async function assertFalse(condition) {
+                   62 |  if (!condition) {
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:57:23)
+                   at Object.assertTrue (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:59:53)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:82:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606131156990' stop='1606131157004'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1606131156990' status='failed' stop='1606131193273'>
+            <name>Digapp - Check Create/update Scorecard Rule with clauses</name>
+            <title>Digapp - Check Create/update Scorecard Rule with clauses</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.198 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('Add')
+                
+                Browser: Chrome 86.0.4240.198 / macOS 10.15.7
+                
+                   10 |        this.add_clause = Selector(this.span).withText(Selectors.clausePage.addClause)
+                   11 |        this.clause_name = Selector(Selectors.clausePage.clauseText)
+                   12 |        this.save_clause=Selector(Selectors.clausePage.saveClause)
+                   13 |    }
+                   14 |    async AddClause(clause_name_val) {
+                 > 15 |        await t.click(this.add_clause)
+                   16 |        await common_functions.typeText(this.clause_name, clause_name_val)
+                   17 |        await t.click(this.save_clause)
+                   18 |    }
+                   19 |    
+                   20 |}
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/clause_page.js:15:17)
+                   at ClausePage.AddClause (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/clause_page.js:14:38)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/08.CreateClauseAndAddToScoreCard.test.js:21:23)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602661702403' stop='1602661702415'>
+    <name>Login to DSCLM &amp; Start Migration from Seal to SpringCM</name>
+    <title>Login to DSCLM &amp; Start Migration from Seal to SpringCM</title>
+    <test-cases>
+        <test-case start='1602661702403' status='failed' stop='1602661716417'>
+            <name>---- Migrate from Seal to SpingCM----- </name>
+            <title>---- Migrate from Seal to SpingCM----- </title>
+            <labels>
+                <label name='feature' value='Spring CM || Migrate from Seal to DSCLM '/>
+                <label name='story' value='Login to DSCLM &amp; Start Migration from Seal to SpringCM'/>
+                <label name='severity' value='High'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Migrate from Seal to DSCLM '/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-12863'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-338'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: Cannot read property 'docuSignName' of undefined
+                
+                Browser: Chrome 86.0.4240.80 / macOS 10.15.6
+                
+                   70 |    ENV: process.env.DsclmURL
+                   71 |
+                   72 |  })
+                   73 |  .only("---- Migrate from Seal to SpingCM----- ", async t => {
+                   74 |    await dsclm_login_page.LoginToDSCLM()
+                 > 75 |    const dsclm_document_id = await saved_search_page.MigrateFromSealToDsclm(docuSign_document_data.docuSignName)
+                   76 |    console.log(dsclm_document_id)
+                   77 |    await t.navigateTo(process.env.DocuSignURL)
+                   78 |    await docusign_login_page.LoginToDocuSign()
+                   79 |    await docusign_page.CheckDocumentMigratedInDocuSign(newMetadata, dsclm_document_id, instanceData.metaDataMappingSealTDSCLM)
+                   80 |  });
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/02.MigrationCycle.test.js:75:101)
+                   at $$testcafe_test_run$$ZLrrVihpS$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$ZLrrVihpS$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

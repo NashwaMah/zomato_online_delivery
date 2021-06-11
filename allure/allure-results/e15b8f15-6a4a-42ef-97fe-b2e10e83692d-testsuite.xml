@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599439793227' stop='1599439793242'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1599439793227' status='failed' stop='1599439815713'>
+            <name>SSO authentication_Login to SLE_flowable-modeler</name>
+            <title>SSO authentication_Login to SLE_flowable-modeler</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('_seal-back_seal-ws_sealws_1__seal_security_sso_oauth2_redirectUri-value')
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   58 |    }
+                   59 |
+                   60 |    async EditConfigrationSealWs1 (sso_oauth2_redirect_uri_value,sso_oauth2_accessTokenUri_value ,client_id_value ,client_secret_value ,user_authorization_uri_value , user_info_uri_value , scope_value) 
+                   61 |    {
+                   62 |       
+                 > 63 |       await t.click(this.sso_oauth2_redirect_uri)
+                   64 |       await common_functions.typeText(this.sso_oauth2_redirect_uri , sso_oauth2_redirect_uri_value)
+                   65 |       
+                   66 |       await t.click(this.sso_oauth2_accessTokenUri)
+                   67 |       await common_functions.typeText(this.sso_oauth2_accessTokenUri , sso_oauth2_accessTokenUri_value)
+                   68 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:63:16)
+                   at SwarmPage.EditConfigrationSealWs1 (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:61:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/07.SSO authentication_Login to SLE.test.js:19:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

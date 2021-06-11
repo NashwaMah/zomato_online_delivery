@@ -1,0 +1,10 @@
+{
+    "span":"span",
+    "aTag":"a",
+    "pTag":"p",
+    "button":"button",
+    "liTag":"li",
+    "div":"div",
+    "input":"input",
+    "label":"label"
+}

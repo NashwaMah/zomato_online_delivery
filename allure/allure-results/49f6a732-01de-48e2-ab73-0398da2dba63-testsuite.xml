@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623403548262' stop='1623403548279'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623403548262' status='failed' stop='1623403603518'>
+            <name> -----  Search for Restaurant and Bookmark -----</name>
+            <title> -----  Search for Restaurant and Bookmark -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='37151ca6-2569-4867-85b8-1330c4bca747-attachment.png' type='image/png' size='3753377'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Selector is expected to be initialized with a function, CSS selector string, another Selector, node snapshot or a Promise returned by a Selector, but undefined was passed.
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_11-21-47/test-6/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Search for Restaurant and Bookmark -----_errors/1.png
+                
+                   24 |
+                   25 |  async SearchForRestaurant(restuarant_name) {
+                   26 |    console.log("Start search for restaruant ")
+                   27 |    await common_functions.typeText(this.search_txt, restuarant_name)
+                   28 |    console.log("Search with restaurant " + restuarant_name)
+                 > 29 |    const restaurant_result = Selector(homepage_selectors.pTag).withText(restuarant_name)
+                   30 |    console.log("click on restaurant from search menu result")
+                   31 |    await t.click(restaurant_result)
+                   32 |  }
+                   33 |
+                   34 |}
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/home_page.js:29:31)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

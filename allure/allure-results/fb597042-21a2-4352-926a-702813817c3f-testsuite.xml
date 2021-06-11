@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611066439082' stop='1611066439082'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1611066439082' status='passed' stop='1611066522616'>
+            <name>----- Update in search criteria from seal and check Next Migration run  -----</name>
+            <title>----- Update in search criteria from seal and check Next Migration run  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

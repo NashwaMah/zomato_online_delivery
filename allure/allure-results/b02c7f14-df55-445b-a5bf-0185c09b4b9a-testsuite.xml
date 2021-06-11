@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623233107244' stop='1623233107261'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623233107244' status='failed' stop='1623233133954'>
+            <name> -----  Login to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Login to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('Sign up')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   13 |    async ClickLogin() {
+                   14 |      await t.click(this.login_btn)
+                   15 |    }
+                   16 |
+                   17 |    async ClickSignup() {
+                 > 18 |        await t.click(this.signup_btn)
+                   19 |      }
+                   20 |
+                   21 |    async SearchForRestaurant(restuarant_name)
+                   22 |    {
+                   23 |        await common_functions.typeText(this.search_txt,restuarant_name)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/home_page.js:18:17)
+                   at HomePage.ClickSignup (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/home_page.js:17:25)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/LoginToZomato.test.js:13:24)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/LoginToZomato.test.js:12:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/wrap-test-function.js:17:28)
+                   at TestRun._executeTestFn (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/test-run/index.js:296:19)
+                   at TestRun.start (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/test-run/index.js:346:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

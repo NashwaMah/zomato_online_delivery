@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602059985292' stop='1602059985302'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602059985292' status='failed' stop='1602060023375'>
+            <name> Digapp - Check Delete/Enable/Disable Rules from UI </name>
+            <title> Digapp - Check Delete/Enable/Disable Rules from UI </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A request to "https://digappnashwa.seal-software.net/logic-apps/apps" has failed.
+                Use quarantine mode to perform additional attempts to execute this test.
+                You can find troubleshooting information for this issue at "https://go.devexpress.com/TestCafe_FAQ_ARequestHasFailed.aspx".
+                
+                Error details:
+                Failed to perform a request to the resource at "https://digappnashwa.seal-software.net/logic-apps/apps" because of an error.
+                Error: connect ETIMEDOUT 192.168.90.146:443
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   41 |}
+                   42 |
+                   43 |
+                   44 |export async function typeText(field,text)
+                   45 |{
+                 > 46 |  await t.typeText(field,text , { paste: true,replace:true } )
+                   47 |
+                   48 |}
+                   49 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:46:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:48:55)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/seal-Login-Page.js:16:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

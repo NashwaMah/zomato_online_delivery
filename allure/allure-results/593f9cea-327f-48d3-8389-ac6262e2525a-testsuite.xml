@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603805166862' stop='1603805166877'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1603805166862' status='failed' stop='1603805198290'>
+            <name>-----Login with SSO user related To Created principle ----- </name>
+            <title>-----Login with SSO user related To Created principle ----- </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected 'Insight Connector | DSCLM' to deeply equal 'Seal'</message>
+                <stack-trace>AssertionError: expected 'Insight Connector | DSCLM' to deeply equal 'Seal'
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   37 |    });
+                   38 |  });
+                   39 |}
+                   40 |
+                   41 |export async function assertEqual(actualResult, expectedResult) {
+                 > 42 |  await t.expect(actualResult).eql(expectedResult)
+                   43 |
+                   44 |}
+                   45 |
+                   46 |export async function assertNotEqual(actualResult, expectedResult) {
+                   47 |  await t.expect(actualResult).notEql(expectedResult)
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:42:32)
+                   at Object.assertEqual (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:44:58)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:61:32)
+                   at PrinciplePage.CheckPageHeader (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:60:30)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/03.NewPincple.test.js:35:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

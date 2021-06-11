@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598633898975' stop='1598633898989'>
+    <name>Login to flowable modeler and create decision table with type Date</name>
+    <title>Login to flowable modeler and create decision table with type Date</title>
+    <test-cases>
+        <test-case start='1598633898975' status='failed' stop='1598633947966'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A native alert dialog was invoked on page "https://cairotest.seal-software.net/flowable-modeler/#/editor/f7d95f35-e91e-11ea-85bf-0242ac120007", but no handler was set for it. Use the "setNativeDialogHandler" function to introduce a handler function for native dialogs.
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   23 |
+                   24 |    async EditProcess(decision_table_name)
+                   25 |    {
+                   26 |        
+                   27 |        await t.click(this.visual_editor)
+                 > 28 |        await t.setNativeDialogHandler((...args) => {
+                   29 |            console.log('handler', args);
+                   30 |            return true;
+                   31 |        });
+                   32 |        await this.decision_table.with({ visibilityCheck: true })() 
+                   33 |        await t.click(this.decision_table)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:28:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598028757690' stop='1598028757704'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1598028757690' status='failed' stop='1598028797514'>
+            <name>Example of First Test</name>
+            <title>Example of First Test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: decision_table_page.CreateConditionCases is not a function
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   16 |    await flowable_modeler_login.LoginToFlowableModeler(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username ,general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   17 |    await flowable_modeler_header.OpenDecisionTableTab()
+                   18 |    await decision_table_page.CreateDecisionTable(decisionTableData.decsionTableData.decisionTableName,decisionTableData.decsionTableData.decisionTableKey)
+                   19 |   await  decision_table_page.CreateInputCondition(decisionTableData.decsionTableData.inputColumnName,decisionTableData.decsionTableData.inputVariableName,decisionTableData.decsionTableData.inputVariableType , decisionTableData.decsionTableData.inputCollection,decisionTableData.decsionTableData.inputSealMetadata) 
+                   20 |   await decision_table_page.CreateOutputCondition(decisionTableData.decsionTableData.outputCoulmnName,decisionTableData.decsionTableData.outputVariableName , decisionTableData.decsionTableData.outputVariableType ,  decisionTableData.decsionTableData.outputCollection,decisionTableData.decsionTableData.outputSealMetadata)
+                 > 21 |   await decision_table_page.CreateConditionCases(decisionTableData.decsionTableData.inputOperator , decisionTableData.decsionTableData.inputConditionValue , decisionTableData.decsionTableData.outputOperator , decisionTableData.decsionTableData.outputConditionValue)
+                   22 |
+                   23 |});
+                   24 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:21:30)
+                   at $$testcafe_test_run$$3ILcRXSJp$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$3ILcRXSJp$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

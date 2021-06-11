@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605521901594' stop='1605521901616'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1605521901594' status='failed' stop='1605521936930'>
+            <name>Digapp - Check Add Activity to specific Logic App from UI from activities tab</name>
+            <title>Digapp - Check Add Activity to specific Logic App from UI from activities tab</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.193 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[title='ScoreCard'')
+                
+                Browser: Chrome 86.0.4240.193 / macOS 10.15.7
+                
+                    97 |    async CreateApp(name, description, type) {
+                    98 |        const app_type = Selector("div[title='" + type + "'")
+                    99 |        await common_functions.typeText(this.name, name)
+                   100 |        await common_functions.typeText(this.description, description)
+                   101 |        await t.click(this.type)
+                 > 102 |        await t.click(app_type)
+                   103 |        await t.click(this.create_app_btn)
+                   104 |
+                   105 |    }
+                   106 |    async CheckAppCreated(name, descirption) {
+                   107 |        const search_results_app_name = Selector("span").withText(name)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:102:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

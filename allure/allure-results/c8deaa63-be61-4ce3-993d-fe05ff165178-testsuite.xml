@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623411149428' stop='1623411149449'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623411149428' status='failed' stop='1623411226552'>
+            <name> -----  Open Go Out For Dinner and book Restaurant -----</name>
+            <title> -----  Open Go Out For Dinner and book Restaurant -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='8e3ad23f-595f-40a4-92ea-5d2cae0e95a3-attachment.png' type='image/png' size='860563'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('span[class='qnejpk-0 kcspOz']')
+                 > |   .child(0)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_13-31-10/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Open Go Out For Dinner and book Restaurant -----_errors/1.png
+                
+                   84 |    }
+                   85 |
+                   86 |    async FillBookDetails(phone_number_input)
+                   87 |    {
+                   88 |        await t.click(this.date_dropdown)
+                 > 89 |        await t.click(this.select_date)
+                   90 |        await t.click(this.guests_dropdown)
+                   91 |        await t.click(this.select_guest_numbers)
+                   92 |        await t.click( this.select_time)
+                   93 |        await common_functions.typeText(this.phone_number , phone_number_input)
+                   94 |        await t.click(this.book_btn)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:89:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

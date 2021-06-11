@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598023259507' stop='1598023259523'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1598023259507' status='failed' stop='1598023324725'>
+            <name>Example of First Test</name>
+            <title>Example of First Test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('select[name='variableType']')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   46 |
+                   47 |async CreateCondition(colmun_label_value,variable_name_value,variable_type_value , collection,seal_metadata)
+                   48 |{
+                   49 |    await common_functions.typeText(this.column_label,colmun_label_value)
+                   50 |    await common_functions.typeText(this.variable_name,variable_name_value)
+                 > 51 |    await t.click(this.variable_type )
+                   52 |    await t.click(Selector("Option[label='"+variable_type_value+"']"))
+                   53 |    if(collection=='true')
+                   54 |    {
+                   55 |    await t.click( this.collection_checkbox)
+                   56 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:51:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

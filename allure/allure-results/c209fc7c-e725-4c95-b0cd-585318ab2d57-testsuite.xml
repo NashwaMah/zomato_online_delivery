@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601546127309' stop='1601546127331'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1601546127309' status='failed' stop='1601546174366'>
+            <name>Regression - Digapp - Check update email settings from UI</name>
+            <title>Regression - Digapp - Check update email settings from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: receiver is not defined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   202 |            await t.click(this.send_scorecard_email)
+                   203 |        }
+                   204 |        if (receiver_val != "" || receiver.length!=0) {
+                   205 |            await common_functions.typeText(this.receiver, receiver_val)
+                   206 |        }
+                 > 207 |        if (cc_email_val != "" || receiver.length!=0) {
+                   208 |            await common_functions.typeText(this.cc_email, cc_email_val)
+                   209 |        }
+                   210 |        if (email_txt_val != "" || receiver.length!=0) {
+                   211 |            await common_functions.typeText(this.email_txt, email_txt_val)
+                   212 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:207:35)
+                   at $$testcafe_test_run$$pS0aO6knJ$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$pS0aO6knJ$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

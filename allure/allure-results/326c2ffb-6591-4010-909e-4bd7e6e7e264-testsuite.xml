@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1597830468348' stop='1597830468356'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1597830468348' status='failed' stop='1597830480326'>
+            <name>Example of First Test</name>
+            <title>Example of First Test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.125 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A request to "http://undefined/" has failed.
+                Use quarantine mode to perform additional attempts to execute this test.
+                You can find troubleshooting information for this issue at "https://go.devexpress.com/TestCafe_FAQ_ARequestHasFailed.aspx".
+                
+                Error details:
+                Failed to find a DNS-record for the resource at "http://undefined/".
+                
+                Browser: Chrome 84.0.4147.125 / macOS 10.15.6
+                
+                   41 |}
+                   42 |
+                   43 |
+                   44 |export async function typeText(field,text)
+                   45 |{
+                 > 46 |  await t.typeText(field,text , { paste: true } )
+                   47 |
+                   48 |}
+                   49 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/test-helpers/utils/common-functions.js:46:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SLE/test-helpers/utils/common-functions.js:48:55)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/flowable-modeler-login.js:16:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

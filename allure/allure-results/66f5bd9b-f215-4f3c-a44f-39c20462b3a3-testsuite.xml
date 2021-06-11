@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601991289983' stop='1601991290003'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1601991289983' status='failed' stop='1601991310626'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('button[class='Button__BaseButton-a1cod8-0 gWPEez Button-a1cod8-1 kXkUwk toggle-guided-search']')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   89 |        await this.SaveNewSearch(contract_class)
+                   90 |    }
+                   91 |
+                   92 |    async  SearchWithContractClass(contract_class) {
+                   93 |        const contract_class_value = Selector("div[aria-label='option-" + contract_class + "']")
+                 > 94 |        await t.click(this.guided_search_btn)
+                   95 |            .click(this.contract_class_dropdown)
+                   96 |        if (await this.load_more_button.exists) {
+                   97 |            await t.click(this.load_more_button)
+                   98 |        }
+                   99 |        await t.click(contract_class_value)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:94:17)
+                   at SealPage.SearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:92:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:45:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

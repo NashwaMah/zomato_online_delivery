@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615800806897' stop='1615800806897'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1615800806897' status='passed' stop='1615800861405'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 89.0.4389.82 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

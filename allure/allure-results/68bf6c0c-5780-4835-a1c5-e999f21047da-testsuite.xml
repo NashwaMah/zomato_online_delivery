@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603790128148' stop='1603790128168'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1603790128148' status='failed' stop='1603790158376'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: ClientFunction is not defined
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   261 |    ///// //////// /////////// /////////// ////// Flowable Seal Functions /////// ////////// ////////// ///////////
+                   262 |
+                   263 |    async GetSealDocumentID() {
+                   264 |        await t.click(this.first_row_result)
+                   265 |        await t.wait(1000)
+                 > 266 |        const get_url = await ClientFunction(() => window.location.href)();
+                   267 |        console.log(get_url)
+                   268 |        const split = get_url.split("/")
+                   269 |        console.log(split.length)
+                   270 |        const document_id= split[split.length-1]
+                   271 |        console.log(document_id)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:266:25)
+                   at $$testcafe_test_run$$BjKhEJhB3$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$BjKhEJhB3$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

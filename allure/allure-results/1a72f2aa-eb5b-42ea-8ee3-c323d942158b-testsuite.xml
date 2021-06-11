@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615815223560' stop='1615815223603'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1615815223560' status='failed' stop='1615815557882'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 89.0.4389.82 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[data-row-id='contracts']')
+                
+                Browser: Chrome 89.0.4389.82 / macOS 10.15.7
+                
+                   195 |
+                   196 |    async SearchWithContractId(contract_Id) {
+                   197 |        await common_functions.typeText(this.search_txt, 'id:' + contract_Id)
+                   198 |        const contract_id = Selector((await this.GetSelectorWithContractId(contract_Id)).toString())
+                   199 |        await t.click(this.search_btn)
+                 > 200 |            .click(contract_id)
+                   201 |    }
+                   202 |    async GetSelectorWithContractId(contract_id) {
+                   203 |        console.log(contract_view_selectors.ContractView.contractIdSelector + contract_id + "']")
+                   204 |        return contract_view_selectors.ContractView.contractIdSelector + contract_id + "']"
+                   205 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:200:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

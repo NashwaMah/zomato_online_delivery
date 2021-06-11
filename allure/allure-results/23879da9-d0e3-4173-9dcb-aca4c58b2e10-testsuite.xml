@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623246695395' stop='1623246695409'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623246695395' status='failed' stop='1623246718487'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[aria-label='Continue with Email']')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   38 |    }
+                   39 |
+                   40 |
+                   41 |    async loginUsingEmail(email, password) {
+                   42 |        
+                 > 43 |        await t.click(this.email_btn)
+                   44 |        await common_functions.typeText(this.login_email.nth(1), email)
+                   45 |        await t.click(this.send_otp_btn)
+                   46 |        
+                   47 |        await t.navigateTo(process.env.outlookUrl)
+                   48 |        await t.click(this.outlook_signin)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:43:17)
+                   at LoginPage.loginUsingEmail (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:41:44)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/AddResutrantReview.test.js:24:33)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

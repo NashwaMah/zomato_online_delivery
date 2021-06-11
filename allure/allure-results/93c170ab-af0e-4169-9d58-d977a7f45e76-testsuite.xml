@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623369154991' stop='1623369155012'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623369154991' status='failed' stop='1623369196269'>
+            <name> -----  Sign Up to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Sign Up to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b7f4d93c-7991-425f-b32e-b088c0118357-attachment.png' type='image/png' size='4504418'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('span')
+                 > |   .withText('Create account')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_01-51-31/test-2/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Sign Up to Zomato web app and check logged in successfully -----_errors/1.png
+                
+                   77 |            console.log("Add Name")
+                   78 |            await common_functions.typeText(this.login_email.nth(1), credential.email)
+                   79 |            console.log("Add email")
+                   80 |            await t.click(this.privacy_checkbox)
+                   81 |            console.log("Check privacy checkbox")
+                 > 82 |            await t.click(this.create_account)
+                   83 |            console.log("click create account ")
+                   84 |
+                   85 |        }
+                   86 |
+                   87 |        await t.navigateTo(process.env.outlookUrl)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:82:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

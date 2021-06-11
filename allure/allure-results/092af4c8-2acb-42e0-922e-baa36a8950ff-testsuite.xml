@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598973168736' stop='1598973168758'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598973168736' status='failed' stop='1598973247396'>
+            <name>Create decision Table for list of numbers</name>
+            <title>Create decision Table for list of numbers</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td[class='htCenter htNumeric currentRow htInvalid']')
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   133 |        switch (condition_type) {
+                   134 |            case "string":
+                   135 |                await t.doubleClick(this.output_condition_string)
+                   136 |                break;
+                   137 |            case "number":
+                 > 138 |                await t.doubleClick(this.output_condition)
+                   139 |                break;
+                   140 |
+                   141 |            case "date":
+                   142 |                await t.doubleClick(this.output_condition_date)
+                   143 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:138:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

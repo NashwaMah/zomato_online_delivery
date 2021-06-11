@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603816707686' stop='1603816707705'>
+    <name>Login to DSCLM and View More Details for Migration </name>
+    <title>Login to DSCLM and View More Details for Migration </title>
+    <test-cases>
+        <test-case start='1603816707686' status='failed' stop='1603816920460'>
+            <name>View More Details for Migration </name>
+            <title>View More Details for Migration </title>
+            <labels>
+                <label name='feature' value='Spring CM ||I should be able to view more details related to a started migration'/>
+                <label name='story' value='Login to DSCLM and View More Details for Migration '/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM ||I should be able to view more details related to a started migration'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16315'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-425'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+                
+                 > | Selector('div[class='ant-select-selection-selected-value']')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   48 |
+                   49 |
+                   50 |    async  StartMigrationForLatestSavedSearch() {
+                   51 |
+                   52 |        await t.click(this.first_search, { offsetX: 16, offsetY: 8 })
+                 > 53 |        const get_instance_name = (await this.instance_name.getAttribute("title")).toString()
+                   54 |        await t.click(this.confirm_selected_instance_btn)
+                   55 |        let search_name_and_instance_name = {
+                   56 |            firstSearchNameAtt: (await this.first_search_name.innerText).toString(),
+                   57 |            instanceNameAtt: get_instance_name
+                   58 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-SavedSearch-Page.js:53:61)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

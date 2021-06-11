@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611066446366' stop='1611066446366'>
+    <name>Delete created  Timer for Saved search </name>
+    <title>Delete created  Timer for Saved search </title>
+    <test-cases>
+        <test-case start='1611066446366' status='passed' stop='1611066453120'>
+            <name>----- Delete Scheduled Migration -----</name>
+            <title>----- Delete Scheduled Migration -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599470285336' stop='1599470285349'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1599470285336' status='failed' stop='1599470302914'>
+            <name>SSO authentication_Login to SLE_flowable-modeler</name>
+            <title>SSO authentication_Login to SLE_flowable-modeler</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A native beforeunload dialog was invoked on page "https://cairotest-admin.seal-software.net/config.html?instance=cairotest.seal-software.net", but no handler was set for it. Use the "setNativeDialogHandler" function to introduce a handler function for native dialogs.
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   81 |
+                   82 |    }
+                   83 |
+                   84 |    async RestartSealWsService()
+                   85 |    {
+                 > 86 |        await t.click(this.service_button)
+                   87 |        await t.click(this.refresh_seal_sw)
+                   88 |    }
+                   89 |}
+                   90 |export default SwarmPage
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:86:17)
+                   at SwarmPage.RestartSealWsService (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:85:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/07.SSO authentication_Login to SLE.test.js:20:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611059994945' stop='1611059994959'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1611059994945' status='failed' stop='1611060023098'>
+            <name>Switch Account visibilty</name>
+            <title>Switch Account visibilty</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span[class='ant-avatar ant-dropdown-trigger ant-avatar-square ant-avatar-icon']')
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   75 |            await common_functions.assertEqual(account_exact_id, selected_account_value)
+                   76 |        }
+                   77 |    }
+                   78 |    async  SwitchToSpecificAccount(account_number) {
+                   79 |        const user_accounts = Selector(Selectors.DSCLM.HomePage.useraccounts).child('ul').child(Selectors.DSCLM.HomePage.useraccountschild).withText(account_number)
+                 > 80 |        await t.click(this.details_dropdown)
+                   81 |        console.log("user has Multi accounts ")
+                   82 |        await common_functions.assertTrue(await this.switch_user_btn.exists)
+                   83 |        await t.click(this.switch_user_btn)
+                   84 |        await t.click(user_accounts)
+                   85 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:80:17)
+                   at PrinciplePage.SwitchToSpecificAccount (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:78:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:71:24)
+                   at PrinciplePage.CheckSwitchBtn (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:64:38)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/03.NewPincple.test.js:46:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600166264277' stop='1600166264294'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1600166264277' status='failed' stop='1600166283426'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: decisionTableData is not defined
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   53 |fixture`Login to Seal and get seal document ID `
+                   54 |    .page`${general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL}`
+                   55 |test.only('get seal document ID and start process check new metadata added in seal ', async t => {
+                   56 |
+                   57 |    await seal_login_page.LoginToSeal(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                 > 58 |    await seal_page.SearchWithContractClass(decisionTableData.String.inptConditionForSeal)
+                   59 |    const document_id = await seal_page.GetSealDocumentID()
+                   60 |
+                   61 |    await t.navigateTo(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].flowableTask)
+                   62 |    await flowable_login.LoginToFlowable(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   63 |    await flowable_task.CreateProcessWithExtraFiled(decisionTableData.appInfo.appName, decisionTableData.String.processName, document_id, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password, decisionTable.processInfo.valueField)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:58:45)
+                   at $$testcafe_test_run$$hzZftxWFh$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$hzZftxWFh$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

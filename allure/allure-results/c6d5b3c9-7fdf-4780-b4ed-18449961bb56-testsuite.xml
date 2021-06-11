@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598275286628' stop='1598275286646'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1598275286628' status='failed' stop='1598275346858'>
+            <name>Example of First Test</name>
+            <title>Example of First Test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: input.setAttribute is not a function
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   85 |    async CreateInputConditionCase(operator_value, input_condition_value) {
+                   86 |        console.log(input_condition_value)
+                   87 |        await t.click(this.operator_list.nth(0))
+                   88 |        await t.click(Selector("td").withText(operator_value))
+                   89 |        const input = document.body.getElementsByClassName("htCenter last first currentRow")
+                 > 90 |        input.setAttribute("Contents",input_condition_value)
+                   91 |       // await common_functions.typeText(this.input_condition, input_condition_value)
+                   92 |    }
+                   93 |    async CreateOutputConditionCase(operator_value, output_condition_value) {
+                   94 |        await t.click(this.operator_list.nth(1))
+                   95 |        await t.click(Selector("td").withText(operator_value))
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:90:15)
+                   at $$testcafe_test_run$$GnsPtNY6L$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$GnsPtNY6L$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

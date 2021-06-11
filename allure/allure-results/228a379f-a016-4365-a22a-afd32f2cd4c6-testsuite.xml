@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602674984799' stop='1602674984820'>
+    <name>LogIn to seal and reattach instance metadata </name>
+    <title>LogIn to seal and reattach instance metadata </title>
+    <test-cases>
+        <test-case start='1602674984799' status='failed' stop='1602675025726'>
+            <name>----- Change in metadata from seal and Reattach document  -----</name>
+            <title>----- Change in metadata from seal and Reattach document  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.80 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('button[class='IconButton-sc-4xz673-0 iLxgbm BoxChild delete-button']')
+                   |   .nth(0)
+                
+                Browser: Chrome 86.0.4240.80 / macOS 10.15.6
+                
+                   146 |            const containers_count = (await this.metadata_value_container.count).toString()
+                   147 |            console.log((await this.metadata_value_container.count).toString())
+                   148 |            var i = 0
+                   149 |            while (i &lt; containers_count) {
+                   150 |                console.log("deleted")
+                 > 151 |                await t.click(this.delete_metadata_value_btn.nth(0))
+                   152 |                i++
+                   153 |            }
+                   154 |            await this.ClickSaveMetadataChangesBtn()
+                   155 |        }
+                   156 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:151:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

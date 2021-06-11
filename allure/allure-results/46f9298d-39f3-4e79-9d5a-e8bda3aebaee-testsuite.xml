@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623176411259' stop='1623176411274'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623176411259' status='failed' stop='1623176434556'>
+            <name> -----  Login to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Login to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Safari 14.1.1 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('input[type='password']')
+                
+                Browser: Safari 14.1.1 / macOS 10.15.7
+                
+                   14 |export async function assertFalse(condition) {
+                   15 |    await t.expect(condition).eql(false)
+                   16 |
+                   17 |}
+                   18 |export async function typeText(field, text) {
+                 > 19 |    await t.typeText(field, text, { paste: true })
+                   20 |
+                   21 |}
+                   22 |
+                   23 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/test-helpers/utils/common-functions.js:19:13)
+                   at Object.typeText (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/test-helpers/utils/common-functions.js:21:57)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:20:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

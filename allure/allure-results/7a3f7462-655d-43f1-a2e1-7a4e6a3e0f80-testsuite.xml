@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599470203366' stop='1599470203381'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1599470203366' status='failed' stop='1599470211712'>
+            <name>SSO authentication_Login to SLE_flowable-modeler</name>
+            <title>SSO authentication_Login to SLE_flowable-modeler</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: Cannot read property 'nth' of undefined
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   55 |        .click(this.allowed_client_uri)
+                   56 |        await common_functions.typeText(this.allowed_client_uri , allowed_client_uri_value)
+                   57 |        await t.click(this.close_editor)
+                   58 |        await t.click( this.sso_secuirty_type)
+                   59 |        await common_functions.typeText( this.sso_secuirty_type ,sso_secuirty_type_value )
+                 > 60 |        await t.click(this.save_configuration.nth(0))
+                   61 |    }
+                   62 |
+                   63 |    async EditConfigrationSealWs1 (sso_oauth2_redirect_uri_value,sso_oauth2_accessTokenUri_value ,client_id_value ,client_secret_value ,user_authorization_uri_value , user_info_uri_value , scope_value) 
+                   64 |    {
+                   65 |       
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:60:47)
+                   at $$testcafe_test_run$$bozNUfpDu$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$bozNUfpDu$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

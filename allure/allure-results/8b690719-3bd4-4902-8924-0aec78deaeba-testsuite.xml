@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611059914987' stop='1611059914987'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1611059914987' status='passed' stop='1611059940695'>
+            <name>-----Login with SSO user related To Created principle ----- </name>
+            <title>-----Login with SSO user related To Created principle ----- </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

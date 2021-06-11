@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600076568862' stop='1600076568875'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600076568862' status='failed' stop='1600076607325'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('a')
+                   |   .withText('Processes')
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   10 |    this.app_tab = Selector("a").withText(Selectors.FlowableModeler.menu.apps)
+                   11 |    this.form_tab = Selector("a").withText(Selectors.FlowableModeler.menu.forms)
+                   12 |  }
+                   13 |
+                   14 |  async  OpenProcessesTab() {
+                 > 15 |    await t.click(this.process_tab)
+                   16 |  }
+                   17 |  async  OpenDecisionTableTab() {
+                   18 |    await t.click(this.decision_table_tab)
+                   19 |  }
+                   20 |  async  OpenAppsTab() {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/components/Flowable_modeler_headerMenu.js:15:13)
+                   at FlowableModelerMenuComponent.OpenProcessesTab (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/components/Flowable_modeler_headerMenu.js:14:29)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:27:27)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

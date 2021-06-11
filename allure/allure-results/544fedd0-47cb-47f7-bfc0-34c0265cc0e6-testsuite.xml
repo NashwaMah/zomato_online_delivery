@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1608049276464' stop='1608049276479'>
+    <name>Login to DSCLM and Upload Multi documents </name>
+    <title>Login to DSCLM and Upload Multi documents </title>
+    <test-cases>
+        <test-case start='1608049276464' status='failed' stop='1608049316827'>
+            <name>Upload Multi Documents  from API</name>
+            <title>Upload Multi Documents  from API</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.88 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.trigger__button')
+                
+                Browser: Chrome 87.0.4280.88 / macOS 10.15.7
+                
+                   18 |    this.docusign_password = Selector(Selectors.DSCLM.LoginSSOPage.loginPass)
+                   19 |    this.docusign_login_btn = Selector(Selectors.DSCLM.LoginSSOPage.SubmitButton)
+                   20 |    this.docusign_continuo_button = Selector(Selectors.DSCLM.LoginSSOPage.continuoButton)
+                   21 |  }
+                   22 |  async  LoginToDSCLM() {
+                 > 23 |    await t.click(this.expand_btn)
+                   24 |    await common_functions.typeText(this.dsclm_login_email, process.env.user)
+                   25 |    await common_functions.typeText(this.dsclm_login_pass, process.env.pass)
+                   26 |    await t.click(this.submit_button)
+                   27 |  }
+                   28 |  async  LoginWithSSOUser(principle) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Login-Page.js:23:13)
+                   at LoginPage.LoginToDSCLM (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Login-Page.js:22:25)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/05.RunMultiDocumentForMigration.test.js:16:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

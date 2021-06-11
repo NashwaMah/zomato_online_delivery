@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623418595418' stop='1623418595438'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623418595418' status='failed' stop='1623418657377'>
+            <name> -----  Open Go Out For Dinner and book Restaurant -----</name>
+            <title> -----  Open Go Out For Dinner and book Restaurant -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='0fbd9f31-7b1f-49f2-99a2-eedf863d42f6-attachment.png' type='image/png' size='782366'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: restaruant_name is not defined
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_15-30-56/test-7/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Open Go Out For Dinner and book Restaurant -----_errors/1.png
+                
+                    93 |        await t.click(select_guest_numbers)
+                    94 |        await t.click(this.select_time)
+                    95 |        await common_functions.typeText(this.phone_code, book_restaurant_details.phone)
+                    96 |        await common_functions.typeText(this.phone_number, book_restaurant_details.phoneCode)
+                    97 |        await t.click(this.book_btn)
+                 >  98 |        return restaruant_name.innerText
+                    99 |    }
+                   100 |
+                   101 |    async CheckRestaurantBooked(restaurant_name) {
+                   102 |        const restaurant_exist = Selector(common_selectors.div).withText(restaurant_name)
+                   103 |        await t.click(this.zomta_homepage)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:98:9)
+                   at $$testcafe_test_run$$l89gJShjc$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$l89gJShjc$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

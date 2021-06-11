@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623191124298' stop='1623191124320'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623191124298' status='failed' stop='1623191163347'>
+            <name> -----  Login to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Login to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: _exportableLib.t.click(...).nth is not a function
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   52 |         while (!await this.zomato_email.exists)
+                   53 |         {
+                   54 |            await t.eval(() => location.reload(true));
+                   55 |         }
+                   56 |        
+                 > 57 |         await t.click(this.zomato_email).nth(0)
+                   58 |         await t.click(this.zomato_link)
+                   59 |
+                   60 |      
+                   61 |    }
+                   62 |}
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:57:43)
+                   at $$testcafe_test_run$$zmIrFS5yv$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$zmIrFS5yv$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

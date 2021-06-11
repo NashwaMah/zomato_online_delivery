@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600726663497' stop='1600726663509'>
+    <name>Fixture Test</name>
+    <title>Fixture Test</title>
+    <test-cases>
+        <test-case start='1600726663497' status='failed' stop='1600726692951'>
+            <name>Example of First Test</name>
+            <title>Example of First Test</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: name is not defined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   13 |
+                   14 |test.only('Example of First Test', async t => {
+                   15 |
+                   16 |    await seal_login_page.LoginToSeal(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   17 |    await digapp_activities_page.CreateCustomApp(activities.CustomApp.name, activities.CustomApp.description, activities.CustomApp.type)
+                 > 18 |    await digapp_activities_page.CheckAppCreated(name)
+                   19 |});
+                   20 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/01-addnewDigappTypefromUI.js:18:50)
+                   at $$testcafe_test_run$$xyRLsDxE1$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$xyRLsDxE1$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

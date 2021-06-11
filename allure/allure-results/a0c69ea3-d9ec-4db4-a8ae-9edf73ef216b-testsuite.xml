@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603813036937' stop='1603813036953'>
+    <name>Login to DSCLM &amp; Search for Documents </name>
+    <title>Login to DSCLM &amp; Search for Documents </title>
+    <test-cases>
+        <test-case start='1603813036937' status='failed' stop='1603813060331'>
+            <name>------Search with Migration Tab ------- </name>
+            <title>------Search with Migration Tab ------- </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+                
+                 > | Selector('tr[class='ant-table-row ant-table-row-level-0']')
+                   |   .nth(0)
+                   |   .child('td')
+                   |   .nth(1)
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   80 |
+                   81 |    async  OpenFirstMigrationAndGetDetails() {
+                   82 |        const instance_name = (await this.click_on_migration_col.nth(0).child("td").nth(2).innerText).toString()
+                   83 |        console.log(instance_name)
+                   84 |        await t.click(this.click_on_migration_col.nth(0))
+                 > 85 |        const seal_document_id = (await this.click_on_migration_col.nth(0).child("td").nth(1).innerText).toString()
+                   86 |        const dsclm_document_id = (await this.click_on_migration_col.nth(0).child("td").nth(2).innerText).toString()
+                   87 |        let migration_details = {
+                   88 |            InstanceName: instance_name,
+                   89 |            SealDocumentID: seal_document_id,
+                   90 |            DsclmDocumentID: dsclm_document_id
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Migrations-Page.js:85:41)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

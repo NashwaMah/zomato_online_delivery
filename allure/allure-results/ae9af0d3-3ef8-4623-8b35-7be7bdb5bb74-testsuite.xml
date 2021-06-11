@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598530471672' stop='1598530471690'>
+    <name>Login to flowable modeler and create decision table with type String</name>
+    <title>Login to flowable modeler and create decision table with type String</title>
+    <test-cases>
+        <test-case start='1598530471672' status='failed' stop='1598530512147'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('htCenter currentRow')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                    94 |    async CreateOutputConditionCase(operator_value, output_condition_value, condition_type) {
+                    95 |        await t.click(this.operator_list.nth(1))
+                    96 |        await t.click(Selector("td").withText(operator_value))
+                    97 |        switch(condition_type) {
+                    98 |            case "string":
+                 >  99 |                await t.doubleClick(this.output_condition_string)
+                   100 |              break;
+                   101 |            case "number":
+                   102 |                await t.doubleClick(this.output_condition)
+                   103 |              break;
+                   104 |        
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:99:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600101203436' stop='1600101203452'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600101203436' status='failed' stop='1600101242461'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The "keys" argument is expected to be a non-empty string, but it was "".
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   122 |                break;
+                   123 |            case "not exists":
+                   124 |                break;
+                   125 |
+                   126 |        }
+                 > 127 |        await t.pressKey(input_condition_value)
+                   128 |
+                   129 |    }
+                   130 |    async CreateOutputConditionCase(operator_value, output_condition_value, condition_type) {
+                   131 |        await t.doubleClick(this.output_operator_list)
+                   132 |        var split = operator_value.split(",")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:127:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

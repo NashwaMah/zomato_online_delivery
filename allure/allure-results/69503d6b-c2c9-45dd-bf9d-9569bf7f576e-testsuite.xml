@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604301667544' stop='1604301667544'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1604301667544' status='passed' stop='1604301688110'>
+            <name>SSO authentication_Login to SLE_flowable-modeler</name>
+            <title>SSO authentication_Login to SLE_flowable-modeler</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

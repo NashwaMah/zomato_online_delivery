@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606380464598' stop='1606380464622'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1606380464598' status='failed' stop='1606380502258'>
+            <name>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</name>
+            <title>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.198 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('ACTIVITIES')
+                
+                Browser: Chrome 86.0.4240.198 / macOS 10.15.7
+                
+                   408 |        await rule_name_in_table.with({ visibilityCheck: true })()
+                   409 |        await common_functions.assertTrue(await rule_name_in_table.exists)
+                   410 |    }
+                   411 |
+                   412 |    async OpenActivitiesTab() {
+                 > 413 |        await t.click(this.activities_tab)
+                   414 |    }
+                   415 |}
+                   416 |export default DigAppActivitiesPage
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:413:17)
+                   at DigAppActivitiesPage.OpenActivitiesTab (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:412:31)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/09.AddingSuffixToAnswerFieldinaWorkflowActivityInSeal.test.js:21:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

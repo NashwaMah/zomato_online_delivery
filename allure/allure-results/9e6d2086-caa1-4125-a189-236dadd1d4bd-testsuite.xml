@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1619531504117' stop='1619531504130'>
+    <name>Login to DSCLM and Upload Multi documents </name>
+    <title>Login to DSCLM and Upload Multi documents </title>
+    <test-cases>
+        <test-case start='1619531504117' status='failed' stop='1619531532706'>
+            <name>Upload Multi Documents  from API</name>
+            <title>Upload Multi Documents  from API</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 90.0.4430.85 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Error: Request failed with status code 401
+                
+                Browser: Chrome 90.0.4430.85 / macOS 10.15.7
+                
+                   11 | * @param {Object} [request] The request.
+                   12 | * @param {Object} [response] The response.
+                   13 | * @returns {Error} The created error.
+                   14 | */
+                   15 |module.exports = function createError(message, config, code, request, response) {
+                 > 16 |  var error = new Error(message);
+                   17 |  return enhanceError(error, config, code, request, response);
+                   18 |};
+                   19 |
+                
+                   at createError (/Users/nashwa.kamal/seal-e2e-tests/node_modules/axios/lib/core/createError.js:16:15)
+                   at settle (/Users/nashwa.kamal/seal-e2e-tests/node_modules/axios/lib/core/settle.js:17:12)
+                   at IncomingMessage.handleStreamEnd (/Users/nashwa.kamal/seal-e2e-tests/node_modules/axios/lib/adapters/http.js:236:11)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602506686792' stop='1602506686817'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602506686792' status='failed' stop='1602506718417'>
+            <name>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</name>
+            <title>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: Cannot read property 'answerLabel' of undefined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   337 |
+                   338 |        }
+                   339 |    }
+                   340 |
+                   341 |    async OneLabelList(rule_info) {
+                 > 342 |        const answer_label_val = Selector("div[title='" + rule_info.answerLabel + "']")
+                   343 |        await t.click(this.list_of_labels_tocheck)
+                   344 |        for (var i = 0; i &lt; rule_info.listofLabels.length; i++) {
+                   345 |            var list_of_labels = Selector("label[aria-label='checkbox-" + rule_info.listofLabels[i] + "']")
+                   346 |            await common_functions.typeText(this.filter_txt, rule_info.listofLabels[i])
+                   347 |            await t.click(list_of_labels)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:342:69)
+                   at DigAppActivitiesPage.OneLabelList (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:341:35)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:323:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

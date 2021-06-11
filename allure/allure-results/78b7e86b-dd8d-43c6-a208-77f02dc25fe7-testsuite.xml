@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611067352689' stop='1611067352689'>
+    <name>LogIn To DSCLM</name>
+    <title>LogIn To DSCLM</title>
+    <test-cases>
+        <test-case start='1611067352689' status='passed' stop='1611067435020'>
+            <name>-----  Retry failed migration when migrating from Spring CM to Seal -----</name>
+            <title>-----  Retry failed migration when migrating from Spring CM to Seal -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <label name='story' value='LogIn To DSCLM'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-11784'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-280'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

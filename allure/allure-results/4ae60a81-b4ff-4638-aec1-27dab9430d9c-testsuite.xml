@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607414632585' stop='1607414632596'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1607414632585' status='failed' stop='1607414663548'>
+            <name>SLE Workbench Reg || Bug Test || Updating DigitalAppActivityDetails does not overwrite existing Details</name>
+            <title>SLE Workbench Reg || Bug Test || Updating DigitalAppActivityDetails does not overwrite existing Details</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.198 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected false to deeply equal true</message>
+                <stack-trace>AssertionError: expected false to deeply equal true
+                
+                Browser: Chrome 86.0.4240.198 / macOS 10.15.7
+                
+                   21 |      t.expect(true).eql(true)
+                   22 |    }
+                   23 |    else
+                   24 |    {
+                   25 |      await
+                 > 26 |      t.expect(false).eql(true)
+                   27 |    }  
+                   28 |}
+                   29 |
+                   30 |export async function assertFalse(condition)
+                   31 |{
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:26:23)
+                   at Object.assertTrue (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:28:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:125:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

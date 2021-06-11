@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623371626183' stop='1623371626200'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623371626183' status='failed' stop='1623371682283'>
+            <name> -----  Sign Up to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Sign Up to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='904c1185-8540-4f1d-8b6f-b1959f501322-attachment.png' type='image/png' size='47143'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('a')
+                 > |   .withText('Create your account')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_02-32-24/test-2/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Sign Up to Zomato web app and check logged in successfully -----_errors/1.png
+                
+                   112 |        if (type == "login") {
+                   113 |            await t.click(this.open_zomato_link)
+                   114 |
+                   115 |        }
+                   116 |        else {
+                 > 117 |            await t.click(this.create_account_email_btn)
+                   118 |        }
+                   119 |
+                   120 |
+                   121 |    }
+                   122 |}
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:117:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598919507780' stop='1598919507786'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598919507780' status='failed' stop='1598919524972'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Unhandled promise rejection:
+                
+                FetchError: invalid json response body at https://cairotest.seal-software.net/seal-logic-connector/api/v1/token reason: Unexpected end of JSON input
+                at /Users/nashwa.kamal/seal-e2e-tests/node_modules/node-fetch/lib/index.js:272:32
+                at $$testcafe_test_run$$5Fob8Nghl$$ (eval at addTrackingMarkerToFunction (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16), &lt;anonymous>:5:39)
+                at $$testcafe_test_run$$5Fob8Nghl$$ (eval at addTrackingMarkerToFunction (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16), &lt;anonymous>:5:39)
+                at runMicrotasks (&lt;anonymous>)
+                at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

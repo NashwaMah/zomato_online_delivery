@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603792476213' stop='1603792476230'>
+    <name>Login to flowable modeler and create decision table with type Date</name>
+    <title>Login to flowable modeler and create decision table with type Date</title>
+    <test-cases>
+        <test-case start='1603792476213' status='failed' stop='1603792529498'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A native alert dialog was invoked on page "https://cairotesting.seal-software.net/flowable-modeler/#/editor/b2f62f3c-182f-11eb-847b-0242ac120006", but no handler was set for it. Use the "setNativeDialogHandler" function to introduce a handler function for native dialogs.
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   32 |
+                   33 |    async EditProcess(decision_table_name) {
+                   34 |
+                   35 |        const decision_table_v = this.decision_table
+                   36 |        await t.click(this.visual_editor)
+                 > 37 |        .setNativeDialogHandler(() => decision_table_v, { dependencies: { decision_table_v }})
+                   38 |        await this.decision_table.with({ visibilityCheck: true })()
+                   39 |        await t.click(this.decision_table)
+                   40 |        await t.click(this.decision_table_reference.nth(12))
+                   41 |        await t.click(Selector("h4").withText(decision_table_name))
+                   42 |        await t.click(this.save_decision_selection)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:37:10)
+                   at ProcessPage.EditProcess (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:33:44)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/03-TestDecisiontable-"Date".test.js:32:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

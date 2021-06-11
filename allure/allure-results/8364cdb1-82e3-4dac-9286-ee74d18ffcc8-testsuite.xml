@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613592361590' stop='1613592361613'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1613592361590' status='failed' stop='1613592402640'>
+            <name>get seal document ID and start process check new metadata added in seal when new field </name>
+            <title>get seal document ID and start process check new metadata added in seal when new field </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.182 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[aria-label='option-Sales']')
+                
+                Browser: Chrome 88.0.4324.182 / macOS 10.15.7
+                
+                   133 |
+                   134 |    async  SearchWithContractClass(contract_class) {
+                   135 |        const contract_class_value = Selector("div[aria-label='option-" + contract_class + "']")
+                   136 |        await t.click(this.guided_search_btn)
+                   137 |            .click(this.contract_class_dropdown)
+                 > 138 |            .click(contract_class_value)
+                   139 |    }
+                   140 |
+                   141 |    async  SaveNewSearch(contractClass) {
+                   142 |        await t.click(this.save_btn)
+                   143 |        await common_functions.typeText(this.search_name_txt, contractClass + " SEARCH")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:138:14)
+                   at SealContractView.SearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:134:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:79:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

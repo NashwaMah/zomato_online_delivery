@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623364703120' stop='1623364703135'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623364703120' status='failed' stop='1623364788352'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('section[class='sc-dDojKJ iEtBQK']')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   40 |        await t.click(this.delivery)
+                   41 |       
+                   42 |        await t.click(this.dining_rate.nth(resturantDetails.restaurantDeliveryReviewNumber))
+                   43 |        await common_functions.typeText( this.review_reason , resturantDetails.restaurantDeliveryReviewComment)
+                   44 |       // await t.click(Selector("section[class='sc-dDojKJ iEtBQK']").child(restaurant_selectors.span).withText(resturantDetails.restaurantDeliveryReviewComment))
+                 > 45 |       await t.click(Selector("section[class='sc-dDojKJ iEtBQK']"))
+                   46 |        // submit review
+                   47 |        await t.click(this.confirm_review)
+                   48 |    }
+                   49 |
+                   50 |    async CheckReviewAdded(resturantDetails)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:45:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

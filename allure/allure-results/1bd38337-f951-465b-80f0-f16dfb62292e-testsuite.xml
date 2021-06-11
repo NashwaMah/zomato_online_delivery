@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611070717030' stop='1611070717031'>
+    <name>Migrate using SSO User </name>
+    <title>Migrate using SSO User </title>
+    <test-cases>
+        <test-case start='1611070717030' status='passed' stop='1611070739614'>
+            <name>----- As an SSO user with DS I should not be able to start a migration if I don't have CLM access -----</name>
+            <title>----- As an SSO user with DS I should not be able to start a migration if I don't have CLM access -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || As an SSO user with DS I should not be able to start a migration if I dont have CLM access'/>
+                <label name='story' value='Migrate using SSO User '/>
+                <label name='severity' value='blocker'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || As an SSO user with DS I should not be able to start a migration if I dont have CLM access'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16313'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-433'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

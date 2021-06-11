@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602022358334' stop='1602022358346'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1602022358334' status='failed' stop='1602022436459'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[class='clearfix']')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   47 |        await t.click(this.process_tab)
+                   48 |        await t.click(this.start_new_process)
+                   49 |        if (await this.start_process.exists) {
+                   50 |            await t.click(this.start_process)
+                   51 |        }
+                 > 52 |        await t.click(this.provide_process_info)
+                   53 |        await common_functions.typeText(this.process_name, process_name_value)
+                   54 |        await common_functions.typeText(this.search_query, "id:" + document_id)
+                   55 |        await t.click(this.authenticate)
+                   56 |        await common_functions.typeText(this.authenticate_username, username)
+                   57 |        await common_functions.typeText(this.authenticate_password, password)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/flowable-task.js:52:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

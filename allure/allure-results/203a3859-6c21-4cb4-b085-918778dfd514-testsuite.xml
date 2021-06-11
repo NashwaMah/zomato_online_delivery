@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622021050628' stop='1622021050632'>
+    <name>Login to DSCLM and Upload Multi documents </name>
+    <title>Login to DSCLM and Upload Multi documents </title>
+    <test-cases>
+        <test-case start='1622021050628' status='failed' stop='1622021059275'>
+            <name>Upload Multi Documents  from API</name>
+            <title>Upload Multi Documents  from API</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 90.0.4430.212 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Error: read ECONNRESET
+                
+                Browser: Chrome 90.0.4430.212 / macOS 10.15.7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

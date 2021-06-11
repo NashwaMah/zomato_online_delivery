@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606407834877' stop='1606407834898'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1606407834877' status='failed' stop='1606407906913'>
+            <name>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</name>
+            <title>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.198 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 86.0.4240.198 / macOS 10.15.7
+                
+                   212 |
+                   213 |///// ////////////////// /////////////// ///////  digApp Seal Functions ////////// ////////// ///////////// /////////// /////////
+                   214 |
+                   215 |    async OpenContractPage() {
+                   216 |        await t.click(this.right_menu)
+                 > 217 |        await t.click(this.contracts)
+                   218 |
+                   219 |    }
+                   220 |
+                   221 |    async OpenClausePage() {
+                   222 |        await t.click(this.right_menu)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:217:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

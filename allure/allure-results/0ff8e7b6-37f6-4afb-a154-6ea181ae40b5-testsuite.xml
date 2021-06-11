@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603882745941' stop='1603882745942'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1603882745941' status='passed' stop='1603882903541'>
+            <name>----- As a user I should be able to setup a timer to trigger a saved search -----</name>
+            <title>----- As a user I should be able to setup a timer to trigger a saved search -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

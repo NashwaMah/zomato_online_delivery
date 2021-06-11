@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598632922544' stop='1598632922562'>
+    <name>Login to flowable modeler and create decision table with type Date</name>
+    <title>Login to flowable modeler and create decision table with type Date</title>
+    <test-cases>
+        <test-case start='1598632922544' status='failed' stop='1598632974745'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td[class='htCenter last first htInvalid htAutocomplete currentRow']')
+                   |   .child('div[class='htAutocompleteArrow']')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   104 |        switch (condition_type) {
+                   105 |            case "string":
+                   106 |                await t.doubleClick(this.input_txtbox)
+                   107 |                break;
+                   108 |            case "date":
+                 > 109 |                await t.click(this.input_condition_date)
+                   110 |
+                   111 |        }
+                   112 |        await t.pressKey(input_condition_value)
+                   113 |
+                   114 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:109:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

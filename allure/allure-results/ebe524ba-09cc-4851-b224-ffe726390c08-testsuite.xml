@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611064561598' stop='1611064561599'>
+    <name>Login to DSCLM &amp; Delete Migration</name>
+    <title>Login to DSCLM &amp; Delete Migration</title>
+    <test-cases>
+        <test-case start='1611064561598' status='passed' stop='1611064595498'>
+            <name> ---- Delete Migration ----- </name>
+            <title> ---- Delete Migration ----- </title>
+            <labels>
+                <label name='feature' value='Spring CM ||| As a user I should be able to delete/purge a completed/failed/duplicate migrations'/>
+                <label name='story' value='Login to DSCLM &amp; Delete Migration'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM ||| As a user I should be able to delete/purge a completed/failed/duplicate migrations'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16312'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-422'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

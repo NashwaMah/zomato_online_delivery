@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602672742984' stop='1602672742999'>
+    <name>LogIn to seal and reattach instance metadata </name>
+    <title>LogIn to seal and reattach instance metadata </title>
+    <test-cases>
+        <test-case start='1602672742984' status='failed' stop='1602672760535'>
+            <name>----- Change in metadata from seal and Reattach document  -----</name>
+            <title>----- Change in metadata from seal and Reattach document  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.80 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: seal_login_page.LoginToSeal is not a function
+                
+                Browser: Chrome 86.0.4240.80 / macOS 10.15.6
+                
+                   56 |  await instance_page.OpenInstanceWithInstanceName(migration_details.InstanceName)
+                   57 |  const metadata_values = await instance_page.GetMetaDataFromInstance()
+                   58 |  //change metadata in seal
+                   59 |  console.log("Step1 - LogIn To Seal")
+                   60 |  await t.navigateTo(process.env.sealurl);
+                 > 61 |  await seal_login_page.LoginToSeal(process.env.sealuser, process.env.sealpass)
+                   62 |  console.log("Step1 - Change Metadata For Document ")
+                   63 |  console.log(metadata_values.SealFieldName)
+                   64 |  await seal_page.ChangeMetadataForDocumentUsingID(metadata_values.SealFieldName, migration_details.SealDocumentID, Selectors.Seal.contracts.NewMetadataValue)
+                   65 |  //click Reattch button
+                   66 |  await t.navigateTo(process.env.DsclmURL);
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/16.ReattachInstanceMetadata.test.js:61:25)
+                   at $$testcafe_test_run$$aC9R_E5OP$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$aC9R_E5OP$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

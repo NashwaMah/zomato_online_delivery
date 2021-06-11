@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600103938267' stop='1600103938288'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600103938267' status='failed' stop='1600103988690'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td[class='output-operator-cell htAutocomplete currentRow']')
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   129 |        await t.pressKey(input_condition_value)
+                   130 |        }
+                   131 |
+                   132 |    }
+                   133 |    async CreateOutputConditionCase(operator_value, output_condition_value, condition_type) {
+                 > 134 |        await t.doubleClick(this.output_operator_list)
+                   135 |        var split = operator_value.split(",")
+                   136 |        await t.pressKey('ctrl+a delete')
+                   137 |        for (var i = 0; i &lt; split.length; i++) {
+                   138 |            await t.pressKey(split[i])
+                   139 |            if (i != split.length - 1) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:134:17)
+                   at DecisionTablePage.CreateOutputConditionCase (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:133:93)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:95:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

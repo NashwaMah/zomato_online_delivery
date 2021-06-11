@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615546971362' stop='1615546971376'>
+    <name>LogIn To DSCLM</name>
+    <title>LogIn To DSCLM</title>
+    <test-cases>
+        <test-case start='1615546971362' status='failed' stop='1615546990511'>
+            <name>-----  Retry failed migration when migrating from Spring CM to Seal -----</name>
+            <title>-----  Retry failed migration when migrating from Spring CM to Seal -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <label name='story' value='LogIn To DSCLM'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-11784'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-280'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+                
+                 > | Selector('td[class='ant-table-column-has-actions ant-table-column-has-filters']')
+                
+                Browser: Chrome 89.0.4389.82 / macOS 10.15.7
+                
+                   85 |            console.log("Step2 -run upload API for file using the created instance  ")
+                   86 |            const nonce = await this.GetnonceToken()
+                   87 |            const xsession_token = await this.GetXsessionToken(nonce)
+                   88 |            await this.RunUploadDocumentV2(document_path, xsession_token)
+                   89 |            var i = 0
+                 > 90 |            while ((await this.migration_status.innerText).toString() != "FAILED" || i &lt; 4) {
+                   91 |                await common_functions.clickRefreshBtn()
+                   92 |                i++
+                   93 |            }
+                   94 |        }
+                   95 |        console.log("Step4 - Retry Failed Migration ")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Documents-Page.js:90:49)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

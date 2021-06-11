@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615284794234' stop='1615284794241'>
+    <name>LogIn To DSCLM</name>
+    <title>LogIn To DSCLM</title>
+    <test-cases>
+        <test-case start='1615284794234' status='failed' stop='1615284808322'>
+            <name>-----  Retry failed migration when migrating from Spring CM to Seal -----</name>
+            <title>-----  Retry failed migration when migrating from Spring CM to Seal -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <label name='story' value='LogIn To DSCLM'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-11784'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-280'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.trigger__button')
+                
+                Browser: Chrome 88.0.4324.192 / macOS 10.15.7
+                
+                   18 |    this.docusign_password = Selector(Selectors.DSCLM.LoginSSOPage.loginPass)
+                   19 |    this.docusign_login_btn = Selector(Selectors.DSCLM.LoginSSOPage.SubmitButton)
+                   20 |    this.docusign_continuo_button = Selector(Selectors.DSCLM.LoginSSOPage.continuoButton)
+                   21 |  }
+                   22 |  async  LoginToDSCLM() {
+                 > 23 |    await t.click(this.expand_btn)
+                   24 |    await common_functions.typeText(this.dsclm_login_email, process.env.user)
+                   25 |    await common_functions.typeText(this.dsclm_login_pass, process.env.pass)
+                   26 |    await t.click(this.submit_button)
+                   27 |  }
+                   28 |  async  LoginWithSSOUser(principle) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Login-Page.js:23:13)
+                   at LoginPage.LoginToDSCLM (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Login-Page.js:22:25)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/11.RetryFailedMigration.test.js:25:28)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/11.RetryFailedMigration.test.js:13:1)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/wrap-test-function.js:17:28)
+                   at TestRun._executeTestFn (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/test-run/index.js:296:19)
+                   at TestRun.start (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/test-run/index.js:346:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623361622060' stop='1623361622074'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623361622060' status='failed' stop='1623361657710'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('span')
+                 > |   .withText('Zomato')
+                   |   .nth(0)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   71 |         {
+                   72 |            await t.click(this.junk_email)
+                   73 |         }
+                   74 |        }
+                   75 |        
+                 > 76 |         await t.click(this.zomato_email.nth(0))
+                   77 |         await t.click(this.zomato_link)
+                   78 |         await t.click(this.open_zomato_link)
+                   79 |
+                   80 |      
+                   81 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:76:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

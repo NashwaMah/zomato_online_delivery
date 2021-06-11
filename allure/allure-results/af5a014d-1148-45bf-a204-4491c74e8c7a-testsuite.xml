@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611059966235' stop='1611059966251'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1611059966235' status='failed' stop='1611059995699'>
+            <name>Switch Account visibilty</name>
+            <title>Switch Account visibilty</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span[class='ant-avatar ant-dropdown-trigger ant-avatar-square ant-avatar-icon']')
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   61 |        await common_functions.assertEqual(this.title_header.innerText, this.title_value)
+                   62 |    }
+                   63 |
+                   64 |    async  CheckSwitchBtn(principle) {
+                   65 |        if (principle.account == "1") {
+                 > 66 |            await t.click(this.details_dropdown)
+                   67 |            await common_functions.assertFalse(await this.switch_user_btn.exists)
+                   68 |            console.log("Switch user button  is not exist ")
+                   69 |        }
+                   70 |        else if (principle.account == "2") {
+                   71 |            await this.SwitchToSpecificAccount(principle.eligableAccount)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:66:21)
+                   at PrinciplePage.CheckSwitchBtn (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:64:38)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/03.NewPincple.test.js:46:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

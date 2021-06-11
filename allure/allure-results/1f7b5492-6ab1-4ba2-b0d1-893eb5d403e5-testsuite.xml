@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600256641596' stop='1600256641611'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600256641596' status='failed' stop='1600256699153'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A native alert dialog was invoked on page "https://cairotest.seal-software.net/flowable-modeler/#/editor/f7d95f35-e91e-11ea-85bf-0242ac120007", but no handler was set for it. Use the "setNativeDialogHandler" function to introduce a handler function for native dialogs.
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   59 |    }
+                   60 |
+                   61 |    async AddDataObject(id_field_value,name_field_value  , type_field_value , value_field_value) {
+                   62 |         
+                   63 |        const data_object=  this.decision_table_reference.nth(8)
+                 > 64 |        await t.click(this.visual_editor)
+                   65 |        .setNativeDialogHandler(() => data_object, { dependencies: { data_object }})
+                   66 |        await t.click(this.decision_table_reference.nth(8))
+                   67 |        await t.click(this.add_new_property)
+                   68 |        await common_functions.typeText(this.id_field , id_field_value)
+                   69 |        await common_functions.typeText(this.name_field, name_field_value)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:64:17)
+                   at ProcessPage.AddDataObject (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:61:98)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:39:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

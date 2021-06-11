@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603891447718' stop='1603891447739'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1603891447718' status='failed' stop='1603891479246'>
+            <name>Regression - Digapp - Check update Name/Description of LogicApp </name>
+            <title>Regression - Digapp - Check update Name/Description of LogicApp </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.cJqjel')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   192 |        await t.click(category_if_label_not_exist_val)
+                   193 |
+                   194 |    }
+                   195 |
+                   196 |    async UpdateName(new_name) {
+                 > 197 |        await t.click(this.edit_name)
+                   198 |        await common_functions.typeText(this.name, new_name)
+                   199 |        await t.click(this.save_btn)
+                   200 |    }
+                   201 |
+                   202 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:197:17)
+                   at DigAppActivitiesPage.UpdateName (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:196:32)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/03.UpdateNameAndDescriptionOfLogicApp.test.js:20:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

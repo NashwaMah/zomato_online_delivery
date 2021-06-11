@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600095081271' stop='1600095081272'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600095081271' status='passed' stop='1600095121880'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623189365224' stop='1623189365236'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623189365224' status='failed' stop='1623189387919'>
+            <name> -----  Login to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Login to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('button[class='sc-1kx5g6g-1 elxuhW sc-dOkuiw hllVih']')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   26 |
+                   27 |    async loginUsingEmail(email, password) {
+                   28 |        
+                   29 |        await t.click(this.email_btn)
+                   30 |        await common_functions.typeText(this.login_email.nth(1), email)
+                 > 31 |        await t.click(this.send_otp_btn)
+                   32 |      
+                   33 |    }
+                   34 |}
+                   35 |
+                   36 |export default LoginPage;
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:31:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

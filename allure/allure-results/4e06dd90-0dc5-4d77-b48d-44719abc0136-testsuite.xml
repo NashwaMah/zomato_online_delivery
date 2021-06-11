@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613732465135' stop='1613732465135'>
+    <name>DSCLM</name>
+    <title>DSCLM</title>
+    <test-cases>
+        <test-case start='1613732465135' status='passed' stop='1613732492173'>
+            <name>Upload Documents using V2 api  </name>
+            <title>Upload Documents using V2 api  </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.182 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603796213054' stop='1603796213067'>
+    <name>get contract id from seal </name>
+    <title>get contract id from seal </title>
+    <test-cases>
+        <test-case start='1603796213054' status='failed' stop='1603796230346'>
+            <name>Check uploaded by attribute retruned from API run </name>
+            <title>Check uploaded by attribute retruned from API run </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: seal_login_page.LoginToSeal is not a function
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   12 |
+                   13 |fixture`get contract id from seal `
+                   14 |    .page`${general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL}`
+                   15 |
+                   16 |test.only('Check uploaded by attribute retruned from API run ', async t => {
+                 > 17 |    await seal_login_page.LoginToSeal(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   18 |    await seal_page.SearchWithContractClass(decisionTableData.ListOfNumbers.inptConditionForSeal)
+                   19 |    const  document_id = await seal_page.GetSealDocumentID()
+                   20 |    const xsession_token = await api_function.GetXsessionToken(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   21 |    await api_function.GetSpecificContractFromSealById( xsession_token, document_id,  general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL)
+                   22 |    
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/06.CheckUploadByAttribute.test.js:17:27)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/06.CheckUploadByAttribute.test.js:16:1)
+                   at $$testcafe_test_run$$vOMEwEA1M$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/wrap-test-function.js:17:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

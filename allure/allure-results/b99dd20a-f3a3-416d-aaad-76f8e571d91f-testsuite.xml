@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623407196659' stop='1623407196681'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623407196659' status='failed' stop='1623407307542'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='53144db0-5ec1-4123-8da1-c11332351894-attachment.png' type='image/png' size='2576311'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_12-24-45/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Search for Restaurant and add review -----_errors/1.png
+                
+                   48 |        await t.click(this.zomta_homepage)
+                   49 |        console.log("Open Profile Menu")
+                   50 |        await t.wait(1000)
+                   51 |        await t.click(this.profile_menu)
+                   52 |        console.log("Open reviews Tab")
+                 > 53 |        await t.click(this.reviews_tab)
+                   54 |        console.log("Check review added in the review section ")
+                   55 |        await common_functions.assertTrue(await restaurant_exist.exists)
+                   56 |    }
+                   57 |
+                   58 |    async BookmarkRestaurant() {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:53:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

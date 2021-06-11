@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603883497836' stop='1603883497851'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1603883497836' status='failed' stop='1603883651855'>
+            <name>----- As a user I should be able to setup a timer to trigger a saved search -----</name>
+            <title>----- As a user I should be able to setup a timer to trigger a saved search -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.
+                
+                 > | Selector('#login-username')
+                   |   .with({ timeout: 70000, visibilityCheck: true })
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   49 |    return element_selector
+                   50 |
+                   51 |}
+                   52 |export async function makeSureSelectorGivenExist(elementSelector) {
+                   53 |    const element_selector = await elementSelector.with({ timeout: general_config_json.SelectorTimeout, visibilityCheck: true })
+                 > 54 |    await t.expect(element_selector.hasAttribute('disabled')).notOk('The element was not disabled', { timeout: general_config_json.SelectorTimeout })
+                   55 |    return element_selector
+                   56 |
+                   57 |}
+                   58 |
+                   59 |export async function makeSureElementWithTextExist(elementSelector, text) {
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DS/test-helpers/utils/common-functions.js:54:63)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

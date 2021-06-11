@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623410286804' stop='1623410286825'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623410286804' status='failed' stop='1623410371713'>
+            <name> -----  Open Go Out For Dinner and book Restaurant -----</name>
+            <title> -----  Open Go Out For Dinner and book Restaurant -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ebe9fab3-8435-4e67-9ca6-a1f4dbe4e19b-attachment.png' type='image/png' size='4566139'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('a[data-result-type='ResCard_TableBooking']')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_13-16-41/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Open Go Out For Dinner and book Restaurant -----_errors/1.png
+                
+                   18 |        this.phone_number=Selector(allrestaurants_selectors.phone)
+                   19 |        this.book_btn= Selector(allrestaurants_selectors.bookBtn)
+                   20 |        }
+                   21 |
+                   22 |    async ClickBookRestaurant() {
+                 > 23 |     await t.click( this.book_table)
+                   24 |    }
+                   25 |
+                   26 |    async FillBookDetails(phone_number_input)
+                   27 |    {
+                   28 |        await t.click(this.date_dropdown)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/all_restarurant_page.js:23:14)
+                   at AllRestaurantPage.ClickBookRestaurant (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/all_restarurant_page.js:22:33)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/4.BookDinner.test.js:24:35)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623406692800' stop='1623406692824'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623406692800' status='failed' stop='1623406741799'>
+            <name> -----  Search for Restaurant and Bookmark -----</name>
+            <title> -----  Search for Restaurant and Bookmark -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='33e119c3-531f-40d0-8e04-ab0baceaf6bc-attachment.png' type='image/png' size='2000851'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('Other')
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_12-17-22/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Search for Restaurant and Bookmark -----_errors/1.png
+                
+                    90 |        await common_functions.typeText(this.outlook_password, credential.password)
+                    91 |        console.log("add password")
+                    92 |        await t.click(this.outlook_submit)
+                    93 |        console.log("Submit ")
+                    94 |        console.log("Open Other folder")
+                 >  95 |        await t.click(this.other_email)
+                    96 |        if (!await this.zomato_email.exists) {
+                    97 |            console.log("mail is not in Other so check Junk folder")
+                    98 |            await t.click(this.junk_email)
+                    99 |        }
+                   100 |        console.log("click on email Link")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:95:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602688750614' stop='1602688750638'>
+    <name>LogIn to seal and reattach instance metadata </name>
+    <title>LogIn to seal and reattach instance metadata </title>
+    <test-cases>
+        <test-case start='1602688750614' status='failed' stop='1602688796187'>
+            <name>----- Change in instance metadata and Reattach document   -----</name>
+            <title>----- Change in instance metadata and Reattach document   -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.80 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 86.0.4240.80 / macOS 10.15.6
+                
+                   103 |        await t.click(instance_used_in_migration)
+                   104 |    }
+                   105 |    async CreateSealToDsclmMetadata(metaDataMappingSealTDSCLM) {
+                   106 |        for (var i = 0; i &lt; metaDataMappingSealTDSCLM.length; i++) {
+                   107 |            await t
+                 > 108 |                .click(this.new_metadata.nth(0))
+                   109 |                .click(this.metadata_dsclm_name)
+                   110 |                .click(Selector("span").withText(metaDataMappingSealTDSCLM[i].DSCLMAttribute))
+                   111 |            await t.click(this.metadata_seal_name)
+                   112 |            await t.typeText(this.dsclm_filter_dropdown.nth(0), metaDataMappingSealTDSCLM[i].SealLabel)
+                   113 |            if (metaDataMappingSealTDSCLM[i].Required == "Yes") {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Instances-Page.js:108:18)
+                   at InstancePage.CreateSealToDsclmMetadata (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Instances-Page.js:105:64)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/16.ReattachInstanceMetadata.test.js:85:23)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

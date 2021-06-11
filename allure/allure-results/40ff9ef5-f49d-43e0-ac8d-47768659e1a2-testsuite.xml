@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613984741681' stop='1613984741688'>
+    <name>Login to DSCLM &amp; Search for Documents </name>
+    <title>Login to DSCLM &amp; Search for Documents </title>
+    <test-cases>
+        <test-case start='1613984741681' status='failed' stop='1613984753456'>
+            <name>-------- Search in Documents Tab -------- </name>
+            <title>-------- Search in Documents Tab -------- </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.182 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The "text" argument is expected to be a non-empty string, but it was "".
+                
+                Browser: Chrome 88.0.4324.182 / macOS 10.15.7
+                
+                   68 |
+                   69 |}
+                   70 |
+                   71 |
+                   72 |export async function typeText(field, text) {
+                 > 73 |  await t.typeText(field, text, { paste: true })
+                   74 |
+                   75 |}
+                   76 |
+                   77 |
+                   78 |////////get current date
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:73:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:75:57)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Documents-Page.js:188:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623250002469' stop='1623250002483'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623250002469' status='failed' stop='1623250064684'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('ul[aria-label='navbar']')
+                   |   .child('li')
+                 > |   .nth(2)
+                   |   .child(0)
+                   |   .child(0)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   37 |    }
+                   38 |
+                   39 |    async CheckReviewAdded(resturantDetails)
+                   40 |    {
+                   41 |        const restaurant_exist= Selector("p").withText(resturantDetails.restaurantName)
+                 > 42 |       await t.click(this.profile_menu)
+                   43 |       await t.click(this.reviews_tab)
+                   44 |       await common_functions.assertTrue(await restaurant_exist.exists)
+                   45 |
+                   46 |    }
+                   47 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:42:16)
+                   at RestaurantPage.CheckReviewAdded (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:40:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/AddResutrantReview.test.js:29:31)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

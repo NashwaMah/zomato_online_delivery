@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615815707327' stop='1615815707372'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1615815707327' status='failed' stop='1615815811500'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 89.0.4389.82 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>- Error in fixture.beforeEach hook -
+                The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[aria-label='option-Lease']')
+                
+                Browser: Chrome 89.0.4389.82 / macOS 10.15.7
+                
+                   133 |
+                   134 |    async  SearchWithContractClass(contract_class) {
+                   135 |        const contract_class_value = Selector("div[aria-label='option-" + contract_class + "']")
+                   136 |        await t.click(this.guided_search_btn)
+                   137 |            .click(this.contract_class_dropdown)
+                 > 138 |            .click(contract_class_value)
+                   139 |    }
+                   140 |
+                   141 |    async  SaveNewSearch(contractClass) {
+                   142 |        await t.click(this.save_btn)
+                   143 |        await common_functions.typeText(this.search_name_txt, contractClass + " SEARCH")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:138:14)
+                   at SealContractView.SearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:134:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/04.Rename the normalizeWithLongestValueAndOffsets.test.js:32:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

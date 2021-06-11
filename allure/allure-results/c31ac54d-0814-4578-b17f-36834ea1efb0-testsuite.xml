@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623238151618' stop='1623238151631'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623238151618' status='failed' stop='1623238166163'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: _exportableLib.t.scrollBy is not a function
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   11 |        
+                   12 |    }
+                   13 |
+                   14 |    async AddRestaurantReview(resturantDetails)
+                   15 |    {
+                 > 16 |        await t.scrollBy(0, 500);
+                   17 |        await t.click(this.dining_rate.nth(resturantDetails.restaurantDinningReviewNumber))
+                   18 |        await t.click(this.delivery)
+                   19 |        await t.click(this.dining_rate.nth(resturantDetails.restaurantDeliveryReviewNumber))
+                   20 |        
+                   21 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:16:17)
+                   at RestaurantPage.AddRestaurantReview (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:15:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/AddResutrantReview.test.js:28:31)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

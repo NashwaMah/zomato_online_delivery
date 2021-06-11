@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598615343873' stop='1598615343891'>
+    <name>Login to flowable modeler and create decision table with type Date</name>
+    <title>Login to flowable modeler and create decision table with type Date</title>
+    <test-cases>
+        <test-case start='1598615343873' status='failed' stop='1598615397726'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td')
+                   |   .withText('ALL LESS OR EQUAL')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   88 |    }
+                   89 |
+                   90 |    async CreateInputConditionCase(operator_value, input_condition_value, condition_type) {
+                   91 |
+                   92 |        await t.click(this.operator_list.nth(0))
+                 > 93 |        await t.click(Selector("td").withText(operator_value))
+                   94 |
+                   95 |        switch (condition_type) {
+                   96 |            case "string":
+                   97 |                await t.doubleClick(this.input_txtbox)
+                   98 |                break;
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:93:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

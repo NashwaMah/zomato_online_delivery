@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611064779536' stop='1611064779558'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1611064779536' status='failed' stop='1611064815825'>
+            <name>----- Update in search criteria from seal and check Next Migration run  -----</name>
+            <title>----- Update in search criteria from seal and check Next Migration run  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.kSwVBC')
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   188 |            await this.ClickSaveMetadataChangesBtn()
+                   189 |        }
+                   190 |    }
+                   191 |
+                   192 |    async  ClickSaveMetadataChangesBtn() {
+                 > 193 |        await t.click(this.save_edited_document_btn)
+                   194 |    }
+                   195 |
+                   196 |    async SearchWithContractId(contract_Id) {
+                   197 |        await common_functions.typeText(this.search_txt, 'id:' + contract_Id)
+                   198 |        const contract_id = Selector((await this.GetSelectorWithContractId(contract_Id)).toString())
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:193:17)
+                   at SealContractView.ClickSaveMetadataChangesBtn (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:192:42)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:188:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

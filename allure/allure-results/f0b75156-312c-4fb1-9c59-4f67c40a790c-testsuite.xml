@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598897983947' stop='1598897983963'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598897983947' status='failed' stop='1598898010071'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>SyntaxError: Unexpected token o in JSON at position 1
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   26 |
+                   27 |    async UpdateOrCreateMetadataWithSpecificContractID(xsession_token)
+                   28 |    {
+                   29 |       
+                   30 |        const url = "https://cairotest.seal-software.net/seal-logic-connector/api/v1/contracts/057e6d984e04515f4a07860d74b0c93b3d2b5ea7/metadata/output_multi_offset"
+                 > 31 |        const response = await this.axios.post(url, JSON.parse(this.update_metadata_data), {
+                   32 |            headers: {
+                   33 |                'content-type': 'text/plain',
+                   34 |                'content-type': 'application/json',
+                   35 |                'X-Session-Token': xsession_token
+                   36 |            }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/api-swagger.js:31:58)
+                   at ApiFunctions.UpdateOrCreateMetadataWithSpecificContractID (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/api-swagger.js:28:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

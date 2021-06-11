@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601563953954' stop='1601563953971'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1601563953955' status='failed' stop='1601563987280'>
+            <name>Regression - Digapp - Check update email settings from UI</name>
+            <title>Regression - Digapp - Check update email settings from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: emai_settings is not defined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   241 |        }
+                   242 |        if(email_settings.EmailTxt.length !=0)
+                   243 |        {
+                   244 |            await common_functions.assertEqual( await this.email_txt.value , email_settings.EmailTxt)
+                   245 |        }
+                 > 246 |        if (emai_settings.includeScorecardAttachment == "true") {     
+                   247 |            await common_functions.assertTrue( this.include_scorecard_attachement.getAttribute('title'),"On")
+                   248 |        }
+                   249 |        else{
+                   250 |            await common_functions.assertTrue( this.include_scorecard_attachement.getAttribute('title'),"Off")
+                   251 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:246:9)
+                   at $$testcafe_test_run$$7_bFk2Iqw$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$7_bFk2Iqw$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602590044065' stop='1602590044078'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602590044065' status='failed' stop='1602590141041'>
+            <name>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</name>
+            <title>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.75 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('#login-username')
+                   |   .with({ visibilityCheck: true })
+                
+                Browser: Chrome 86.0.4240.75 / macOS 10.15.6
+                
+                   41 |}
+                   42 |
+                   43 |
+                   44 |export async function typeText(field,text)
+                   45 |{
+                 > 46 |  await t.typeText(field,text , { paste: true,replace:true } )
+                   47 |
+                   48 |}
+                   49 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:46:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:48:55)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/seal-Login-Page.js:16:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601308334650' stop='1601308334666'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1601308334650' status='failed' stop='1601308370201'>
+            <name>DigApp - Regression - Create scorecard from UI </name>
+            <title>DigApp - Regression - Create scorecard from UI </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('test scorcard ')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   73 |
+                   74 |    async OpenCreatedApp(name)
+                   75 |    {
+                   76 |        const search_results_app_name = Selector("span").withText(name)
+                   77 |        await common_functions.typeText(this.search_txt, name)
+                 > 78 |        await t.click(search_results_app_name)
+                   79 |    }
+                   80 |
+                   81 |    async CreateRule(rule_info)
+                   82 |    {
+                   83 |        const risk_when_positive = Selector("div[title='"+rule_info.riskWhenPositive+"'")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:78:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

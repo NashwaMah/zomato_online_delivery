@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603887938005' stop='1603887938016'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1603887938005' status='failed' stop='1603888046587'>
+            <name>DigApp - Regression - Check that user can remove any Digapp type from UI</name>
+            <title>DigApp - Regression - Check that user can remove any Digapp type from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('input[type='search']')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   41 |}
+                   42 |
+                   43 |
+                   44 |export async function typeText(field,text)
+                   45 |{
+                 > 46 |  await t.typeText(field,text , { paste: true,replace:true } )
+                   47 |
+                   48 |}
+                   49 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:46:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:48:55)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:122:32)
+                   at DigAppActivitiesPage.CheckAppDeleted (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:120:33)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/01-addnewDigappTypefromUI.test.js:27:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

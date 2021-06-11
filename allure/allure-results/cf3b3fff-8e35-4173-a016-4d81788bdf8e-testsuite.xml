@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603787326207' stop='1603787326222'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1603787326207' status='failed' stop='1603787386326'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('h3[title='Update Seal Metadata Template v1.4'')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   25 |
+                   26 |    }
+                   27 |
+                   28 |    async OpenProcessByName(process_name) {
+                   29 |        const process = Selector("h3[title='" + process_name + "'")
+                 > 30 |        await t.click(process)
+                   31 |    }
+                   32 |
+                   33 |    async EditProcess(decision_table_name) {
+                   34 |
+                   35 |        const decision_table_v = this.decision_table
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:30:17)
+                   at ProcessPage.OpenProcessByName (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:28:43)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:31:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

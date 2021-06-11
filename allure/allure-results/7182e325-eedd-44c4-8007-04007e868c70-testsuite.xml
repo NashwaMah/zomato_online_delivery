@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603792143434' stop='1603792143450'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1603792143434' status='failed' stop='1603792152971'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: seal_login_page.LoginToSeal is not a function
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   39 |
+                   40 |fixture`Login to Seal and get seal document ID `
+                   41 |    .page`${general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL}`
+                   42 |test.only('get seal document ID and start process check new metadata added in seal ', async t => {
+                   43 |
+                 > 44 |    await seal_login_page.LoginToSeal(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   45 |    await seal_page.SearchWithContractClass(decisionTableData.String.inptConditionForSeal)
+                   46 |    const document_id = await seal_page.GetSealDocumentID()
+                   47 |
+                   48 |    await t.navigateTo(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].flowableTask)
+                   49 |    await flowable_login.LoginToFlowable(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/02-TestDecisiontable-"String".test.js:44:27)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/02-TestDecisiontable-"String".test.js:42:1)
+                   at $$testcafe_test_run$$E730XWfl9$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/wrap-test-function.js:17:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

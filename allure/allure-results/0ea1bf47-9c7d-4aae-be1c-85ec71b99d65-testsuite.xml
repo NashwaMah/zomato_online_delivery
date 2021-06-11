@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603879531499' stop='1603879531527'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1603879531499' status='failed' stop='1603879569920'>
+            <name>----- As a user I should be able to setup a timer to trigger a saved search -----</name>
+            <title>----- As a user I should be able to setup a timer to trigger a saved search -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('button[class='Button__BaseButton-a1cod8-0 kHlQEc Button-a1cod8-1 kXkUwk FormButton-sc-1ewocs1-0 kNGIyL']')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   130 |    }
+                   131 |
+                   132 |    async  SaveNewSearch(contractClass) {
+                   133 |        await t.click(this.save_btn)
+                   134 |        await common_functions.typeText(this.search_name_txt, contractClass + " SEARCH")
+                 > 135 |        await t.click(this.save_search_btn)
+                   136 |        return contractClass + " SEARCH"
+                   137 |    }
+                   138 |
+                   139 |    async ChangeMetadataValueForContractClass(contractclass_filter, contract_class, metadata_name) {
+                   140 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:135:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

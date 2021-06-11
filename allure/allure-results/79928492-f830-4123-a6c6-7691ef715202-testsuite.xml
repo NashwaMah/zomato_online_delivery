@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598904024305' stop='1598904024317'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598904024305' status='failed' stop='1598904092857'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   29 |        await t.setNativeDialogHandler((...args) => {
+                   30 |            console.log('handler', args);
+                   31 |            return true;
+                   32 |        });
+                   33 |        //await this.decision_table.with({ visibilityCheck: true })() 
+                 > 34 |        await t.click(this.decision_table)
+                   35 |        await t.click(this.decision_table_reference.nth(12))
+                   36 |        await t.click(Selector("h4").withText(decision_table_name))
+                   37 |        await t.click(this.save_decision_selection)
+                   38 |        await t.click(this.save_process)
+                   39 |        await t.click(this.save_and_close)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:34:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

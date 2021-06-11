@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620144612013' stop='1620144612019'>
+    <name>LogIn To DSCLM</name>
+    <title>LogIn To DSCLM</title>
+    <test-cases>
+        <test-case start='1620144612013' status='failed' stop='1620144634823'>
+            <name>-----  Retry failed migration when migrating from Spring CM to Seal -----</name>
+            <title>-----  Retry failed migration when migrating from Spring CM to Seal -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <label name='story' value='LogIn To DSCLM'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Retry failed migration when migrating from Spring CM to Seal'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-11784'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-280'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('a[href='/sie-dsclm/springcm-contracts']')
+                
+                Browser: Chrome 90.0.4430.93 / macOS 10.15.7
+                
+                   21 |async  OpenInstancesTab() {
+                   22 |    await t.click(this.instance_tab_btn)
+                   23 |}
+                   24 |
+                   25 |async OpenDocumentsTab() {
+                 > 26 |    await t.click(this.documents_tab_btn)
+                   27 |}
+                   28 |
+                   29 |async  OpenPrincpleTab() {
+                   30 |    await t.click(this.principal_tab_btn)
+                   31 |}
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/components/sie-dsclm-Menu_Component.js:26:13)
+                   at MenuComponent.OpenDocumentsTab (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/components/sie-dsclm-Menu_Component.js:25:26)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/11.RetryFailedMigration.test.js:27:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

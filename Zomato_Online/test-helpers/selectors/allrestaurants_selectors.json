@@ -1,0 +1,8 @@
+
+{
+    "bookTable":"a[data-result-type='ResCard_TableBooking']",
+    "SelectDate":"Select Date",
+    "SelectGuests":"Select Guests",
+    "phone":"input[name='phone']",
+    "bookBtn":"button[class='sc-1kx5g6g-1 cTRhrB sc-iPLSqh hgcDbC']"
+}

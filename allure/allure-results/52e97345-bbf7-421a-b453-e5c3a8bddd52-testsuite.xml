@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600076286342' stop='1600076286354'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600076286342' status='failed' stop='1600076322797'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>A native alert dialog was invoked on page "https://cairotest.seal-software.net/flowable-modeler/#/editor/f7d95f35-e91e-11ea-85bf-0242ac120007", but no handler was set for it. Use the "setNativeDialogHandler" function to introduce a handler function for native dialogs.
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   55 |    }
+                   56 |
+                   57 |    async AddDataObject()
+                   58 |    {
+                   59 |        await t.click(this.visual_editor)
+                 > 60 |        await t.setNativeDialogHandler((...args) => {
+                   61 |            console.log('handler', args);
+                   62 |            return true;
+                   63 |        });
+                   64 |        await t.click(this.decision_table_reference.nth(8))
+                   65 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:60:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

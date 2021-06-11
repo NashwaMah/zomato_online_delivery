@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602507744294' stop='1602507744322'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602507744294' status='failed' stop='1602507781213'>
+            <name>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</name>
+            <title>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('#button-submit')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   357 |        if (rule_info.doNotAddToContract == "true") {
+                   358 |            await t.click(this.dont_add_to_contract)
+                   359 |        }
+                   360 |        await common_functions.typeText(this.answer_if_label_exists, rule_info.answerifLabelExist)
+                   361 |        await common_functions.typeText(this.answer_if_label_not_exists, rule_info.answerIfLabelNotExist)
+                 > 362 |        await t.click(this.save_btn)
+                   363 |
+                   364 |    }
+                   365 |    async OneLabelListWithEntity(rule_info) {
+                   366 |    }
+                   367 |    async NormalizeLabelValue(rule_info) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:362:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600169483373' stop='1600169483385'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1600169483373' status='failed' stop='1600169526002'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('#input-freetext-search-contract')
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                   41 |}
+                   42 |
+                   43 |
+                   44 |export async function typeText(field,text)
+                   45 |{
+                 > 46 |  await t.typeText(field,text , { paste: true,replace:true } )
+                   47 |
+                   48 |}
+                   49 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/test-helpers/utils/common-functions.js:46:11)
+                   at Object.typeText (/Users/nashwa.kamal/seal-e2e-tests/SLE/test-helpers/utils/common-functions.js:48:55)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:158:32)
+                   at SealPage.SearchWithContractId (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:157:45)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:66:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606423740715' stop='1606423740733'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1606423740715' status='failed' stop='1606423796691'>
+            <name>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</name>
+            <title>SLE Workbench || Adding Suffix to an answer field in a workflow activity in Seal</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.198 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: Cannot read property 'split' of undefined
+                
+                Browser: Chrome 86.0.4240.198 / macOS 10.15.7
+                
+                   281 |    }
+                   282 |
+                   283 |    async CheckSuffixResult(rule_info)
+                   284 |    {
+                   285 |        const first_split = rule_info.answerifLabelExist.split('&lt;')
+                 > 286 |        const second_split = first_split[first_split-1].split('>')[0]
+                   287 |        console.log(second_split)
+                   288 |    }
+                   289 |
+                   290 |
+                   291 |    ///// //////// /////////// /////////// ////// Flowable Seal Functions /////// ////////// ////////// ///////////
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:286:57)
+                   at SealContractView.CheckSuffixResult (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:284:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:263:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

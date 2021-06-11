@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603887735096' stop='1603887735124'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1603887735096' status='failed' stop='1603887787974'>
+            <name>DigApp - Regression - Check that user can remove any Digapp type from UI</name>
+            <title>DigApp - Regression - Check that user can remove any Digapp type from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('YES, DELETE')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   111 |
+                   112 |    }
+                   113 |    async DeleteCreatedApp(name) {
+                   114 |        await this.OpenCreatedApp(name)
+                   115 |        await t.click(this.delete_app_btn)
+                 > 116 |        await t.click(this.confirm_delete)
+                   117 |
+                   118 |    }
+                   119 |
+                   120 |    async CheckAppDeleted(name) {
+                   121 |        const search_results_app_name = Selector("span").withText(name)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:116:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611058153107' stop='1611058153132'>
+    <name>Login To SpringCM &amp; Start Migration from SpringCM to Seal</name>
+    <title>Login To SpringCM &amp; Start Migration from SpringCM to Seal</title>
+    <test-cases>
+        <test-case start='1611058153107' status='failed' stop='1611058249563'>
+            <name>---- Start Migration from SpringCM to Seal----- </name>
+            <title>---- Start Migration from SpringCM to Seal----- </title>
+            <labels>
+                <label name='feature' value='Spring CM || Get Document from Docusign'/>
+                <label name='story' value='Login To SpringCM &amp; Start Migration from SpringCM to Seal'/>
+                <label name='severity' value='High'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Get Document from Docusign'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-12863'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-339'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: mappingValues is not defined
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   70 |    ////////// ////// //////////////  ////////////////// Dsclm Seal Functions /////// //////////////// ////////////// //////////////////// //////
+                   71 |
+                   72 |    async  CheckDocumentMigratedInSeal(seal_document_id, docuSiagn_documentname) {
+                   73 |
+                   74 |        await this.SearchWithContractId(seal_document_id)
+                 > 75 |        for (var i = 0; i &lt; mappingValues.metaDataMappingDSCLMToSeal.length; i++) {
+                   76 |            await t.click(await Selector(this.label).withText(mappingValues.metaDataMappingDSCLMToSeal[i].SealLabel))
+                   77 |            if (await this.metadata_value_container.exists) {
+                   78 |                await common_functions.assertEqual(this.metadata_value_container.innerText, docuSiagn_documentname[mappingValues.metaDataMappingDSCLMToSeal[i].DSCLMAttribute.split(".")[1]])
+                   79 |            }
+                   80 |            else {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:75:29)
+                   at $$testcafe_test_run$$hl7xHm0e_$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$hl7xHm0e_$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

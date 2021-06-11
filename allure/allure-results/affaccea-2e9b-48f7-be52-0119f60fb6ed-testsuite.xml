@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603017967814' stop='1603017967815'>
+    <name>LogIn To DSCLM &amp; Check Counts for certain fields from saved search </name>
+    <title>LogIn To DSCLM &amp; Check Counts for certain fields from saved search </title>
+    <test-cases>
+        <test-case start='1603017967814' status='passed' stop='1603018005235'>
+            <name>----- As a user I can view counts for certain fields from the saved search result set returned from Seal -----</name>
+            <title>----- As a user I can view counts for certain fields from the saved search result set returned from Seal -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || As a user I can view counts for certain fields from the saved search result set returned from Seal'/>
+                <label name='story' value='LogIn To DSCLM &amp; Check Counts for certain fields from saved search '/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || As a user I can view counts for certain fields from the saved search result set returned from Seal'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/ SEAl-11880'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-275'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

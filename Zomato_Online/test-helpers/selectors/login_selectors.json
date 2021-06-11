@@ -1,0 +1,26 @@
+{
+    "signupLinkTest":"Sign up",
+    "continuoWithGmail":"div[aria-label='Continue with Google']",
+    "gmailEmail":"input[type='email']",
+    "gmailPassword":"input[type='password']",
+    "emailNextbtn":"#identifierNext",
+    "passwordNextbtn":"div[jsname='Njthtb']",
+    "continuoWithEmail":"div[aria-label='Continue with Email']",
+    "email":"section[label='Email']",
+    "sendOTP":"Send OTP",
+    "outlookEmailNext":"input[type='submit']",
+    "outlookSignIn":"a[data-task='signin']",
+    "openZomatoLink":"#deeplink",
+    "junkEmail":"Junk Email",
+    "Zomato":"Zomato",
+    "Other":"Other",
+    "LoginToZomato":"Log in to Zomato",
+    "signupName":"section[label='Full Name']",
+    "createAccount":"Create account" ,
+    "CreateyouraccountMail":"Create your account",
+    "unreadMail":"div[class='_3zJzxRam-s-FYVZNqcZ0BW']"
+
+   
+
+
+}

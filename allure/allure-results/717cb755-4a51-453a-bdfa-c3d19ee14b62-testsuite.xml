@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598918643774' stop='1598918643786'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598918643774' status='failed' stop='1598918660989'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: "" is not a function
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   17 |   
+                   18 |    }
+                   19 |
+                   20 |    async GetXsessionToken(url,usrname,pssword) {
+                   21 | 
+                 > 22 |        var json=""
+                   23 |
+                   24 |        (async () => {
+                   25 |            const body = {
+                   26 |                password : pssword,
+                   27 |                principal :usrname
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/api-swagger.js:22:18)
+                   at ApiFunctions.GetXsessionToken (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/api-swagger.js:20:49)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

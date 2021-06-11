@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623232460064' stop='1623232460079'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623232460064' status='failed' stop='1623232486675'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: resturantDetails is not defined
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   20 |    test.only(' -----  Search for Restaurant and add review -----', async t => {
+                   21 |        await homepage.ClickLogin()
+                   22 |        await zomato_login_page.loginUsingGmail(credintial[0].email, credintial[0].password)
+                   23 |        console.log("------ Logged in with user  " + credintial[0].email + " ------")
+                   24 |        await t.wait(10000)
+                 > 25 |        console.log(resturantDetails.restaurantName)
+                   26 |        await homepage.SearchForRestaurant(resturant_details.restaurantName)
+                   27 |
+                   28 |    });
+                   29 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/AddResutrantReview.test.js:25:21)
+                   at $$testcafe_test_run$$cV_fgG1eO$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$cV_fgG1eO$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

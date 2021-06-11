@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623369488260' stop='1623369488279'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623369488260' status='failed' stop='1623369516302'>
+            <name> -----  Sign Up to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Sign Up to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='6298a8bc-4574-448d-9861-ab12fa5074ab-attachment.png' type='image/png' size='1812650'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('section[label='Email']')
+                   |   .nth(1)
+                   |   .nextSibling(0)
+                 > |   .child(0)
+                   |   .child(0)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_01-57-17/test-2/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Sign Up to Zomato web app and check logged in successfully -----_errors/1.png
+                
+                   75 |            console.log("Select sign up with Email option")
+                   76 |            await common_functions.typeText(this.signup_name, credential.name)
+                   77 |            console.log("Add Name")
+                   78 |            await common_functions.typeText(this.login_email.nth(1), credential.email)
+                   79 |            console.log("Add email")
+                 > 80 |            await t.click(this.privacy_checkbox)
+                   81 |            console.log("Check privacy checkbox")
+                   82 |            await t.click(this.create_account)
+                   83 |            console.log("click create account ")
+                   84 |
+                   85 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:80:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602672942376' stop='1602672942376'>
+    <name>LogIn to seal and reattach instance metadata </name>
+    <title>LogIn to seal and reattach instance metadata </title>
+    <test-cases>
+        <test-case start='1602672942376' status='passed' stop='1602672949120'>
+            <name>----- Check reattach Button added in instance Tab for each Document  -----</name>
+            <title>----- Check reattach Button added in instance Tab for each Document  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.80 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

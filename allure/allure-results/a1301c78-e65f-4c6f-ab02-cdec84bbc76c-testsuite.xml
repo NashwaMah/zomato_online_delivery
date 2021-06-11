@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623357089191' stop='1623357089208'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623357089191' status='failed' stop='1623357180226'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   30 |        await t.click(this.dining_rate.nth(resturantDetails.restaurantDinningReviewNumber))
+                   31 |        await common_functions.typeText( this.review_reason , resturantDetails.restaurantDiningReviewComment)
+                   32 |        await t.click(Selector(restaurant_selectors.span).withText(resturantDetails.restaurantDiningReviewComment))
+                   33 |
+                   34 |        // add delivery review
+                 > 35 |        await t.click(this.delivery)
+                   36 |        await t.click(this.dining_rate.nth(resturantDetails.restaurantDeliveryReviewNumber))
+                   37 |        await common_functions.typeText( this.review_reason , resturantDetails.restaurantDeliveryReviewComment)
+                   38 |        await t.click(Selector(restaurant_selectors.span).withText(resturantDetails.restaurantDeliveryReviewComment))
+                   39 |
+                   40 |        // submit review
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:35:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

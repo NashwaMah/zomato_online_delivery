@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603885294110' stop='1603885294127'>
+    <name>Set Timer for Saved search and check migration Starts </name>
+    <title>Set Timer for Saved search and check migration Starts </title>
+    <test-cases>
+        <test-case start='1603885294110' status='failed' stop='1603885327743'>
+            <name>----- Update in search criteria from seal and check Next Migration run  -----</name>
+            <title>----- Update in search criteria from seal and check Next Migration run  -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.delete-button')
+                   |   .nth(0)
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   171 |            const containers_count = (await this.metadata_value_container.count).toString()
+                   172 |            console.log((await this.metadata_value_container.count).toString())
+                   173 |            var i = 0
+                   174 |            while (i &lt; containers_count) {
+                   175 |                console.log("deleted")
+                 > 176 |                await t.click(this.delete_metadata_value_btn.nth(0))
+                   177 |                i++
+                   178 |            }
+                   179 |            await this.ClickSaveMetadataChangesBtn()
+                   180 |        }
+                   181 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:176:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

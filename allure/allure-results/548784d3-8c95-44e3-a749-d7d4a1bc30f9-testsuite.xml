@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613732356664' stop='1613732356671'>
+    <name>DSCLM</name>
+    <title>DSCLM</title>
+    <test-cases>
+        <test-case start='1613732356664' status='failed' stop='1613732519944'>
+            <name>Upload Documents using V2 api  </name>
+            <title>Upload Documents using V2 api  </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.182 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Error: connect ETIMEDOUT 192.168.88.254:443
+                
+                Browser: Chrome 88.0.4324.182 / macOS 10.15.7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

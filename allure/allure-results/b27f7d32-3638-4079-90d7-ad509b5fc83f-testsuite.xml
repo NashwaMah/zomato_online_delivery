@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603892968417' stop='1603892968440'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1603892968417' status='failed' stop='1603893000383'>
+            <name>Regression - Digapp - Check update email settings from UI</name>
+            <title>Regression - Digapp - Check update email settings from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('EMAIL SETTINGS')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   210 |        await t.click(this.close_preview)
+                   211 |    }
+                   212 |
+                   213 |
+                   214 |    async OpenEmailSettings() {
+                 > 215 |        await t.click(this.email_settings_button)
+                   216 |    }
+                   217 |
+                   218 |    async UpdateEmailSettings(send_scorecard_email_val, receiver_val, cc_email_val, email_txt_val, include_scorecard_attachement_val, include_scorecard_overview_val) {
+                   219 |        if (send_scorecard_email_val == "true") {
+                   220 |            await t.click(this.send_scorecard_email)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:215:17)
+                   at DigAppActivitiesPage.OpenEmailSettings (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:214:31)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/04.UpdateEmailSettings.test.js:21:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

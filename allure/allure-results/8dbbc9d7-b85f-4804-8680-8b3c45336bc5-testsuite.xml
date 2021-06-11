@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598400832304' stop='1598400832315'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1598400832304' status='failed' stop='1598400874269'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: publish_app is not defined
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   12 |
+                   13 |    async PublishApp(app_name)
+                   14 |    {
+                   15 |        const app=Selector("h3").withText(app_name)
+                   16 |        await t.click(app)
+                 > 17 |        await t.click(publish_app)
+                   18 |    }
+                   19 |}
+                   20 |export default AppsPage
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/apps-page.js:17:23)
+                   at $$testcafe_test_run$$FVn5Wl1AR$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$FVn5Wl1AR$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

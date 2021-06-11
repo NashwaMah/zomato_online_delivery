@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1617626146343' stop='1617626146343'>
+    <name>Login to DSCLM &amp; Create Instance Test</name>
+    <title>Login to DSCLM &amp; Create Instance Test</title>
+    <test-cases>
+        <test-case start='1617626146343' status='passed' stop='1617626250322'>
+            <name>Create new Instance </name>
+            <title>Create new Instance </title>
+            <labels>
+                <label name='feature' value='Spring CM || Create an instance'/>
+                <label name='story' value='Login to DSCLM &amp; Create Instance Test'/>
+                <label name='severity' value='High'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Create an instance'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-12863'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-337'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

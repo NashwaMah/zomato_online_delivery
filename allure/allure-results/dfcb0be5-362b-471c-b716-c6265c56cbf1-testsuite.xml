@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1617626632262' stop='1617626632277'>
+    <name>Login to DSCLM and Upload Multi documents </name>
+    <title>Login to DSCLM and Upload Multi documents </title>
+    <test-cases>
+        <test-case start='1617626632262' status='failed' stop='1617626667579'>
+            <name>Upload Multi Documents  from API</name>
+            <title>Upload Multi Documents  from API</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 89.0.4389.114 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected false to deeply equal true</message>
+                <stack-trace>AssertionError: expected false to deeply equal true
+                
+                Browser: Chrome 89.0.4389.114 / macOS 10.15.7
+                
+                   52 |    await
+                   53 |      t.expect(true).eql(true)
+                   54 |  }
+                   55 |  else {
+                   56 |    await
+                 > 57 |      t.expect(false).eql(true)
+                   58 |  }
+                   59 |}
+                   60 |
+                   61 |export async function assertFalse(condition) {
+                   62 |  if (!condition) {
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:57:23)
+                   at Object.assertTrue (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:59:53)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Documents-Page.js:159:36)
+                   at DocumentsPage.CompareTwoDates (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Documents-Page.js:147:41)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Documents-Page.js:142:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

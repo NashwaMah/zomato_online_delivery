@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601545248098' stop='1601545248116'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1601545248098' status='failed' stop='1601545276375'>
+            <name>Regression - Digapp - Check update email settings from UI</name>
+            <title>Regression - Digapp - Check update email settings from UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>Action "selector" argument error:
+                
+                Selector is expected to be initialized with a function, CSS selector string, another Selector, node snapshot or a Promise returned by a Selector, but undefined was passed.
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   197 |
+                   198 |    async UpdateEmailSettings(send_scorecard_email_val,receiver_val,cc_email_val ,email_txt_val, include_scorecard_attachement_val , include_scorecard_overview_val)
+                   199 |    {
+                   200 |        if (send_scorecard_email_val=="true")
+                   201 |        {
+                 > 202 |            await t.click(this.send_scorecard_email)
+                   203 |        }
+                   204 |        if(receiver_val !="" || receiver != undefined)
+                   205 |        {
+                   206 |           await common_functions.typeText(this.receiver  , receiver_val)
+                   207 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:202:21)
+                   at DigAppActivitiesPage.UpdateEmailSettings (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:199:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/tests/04.UpdateEmailSettings.test.js:22:34)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

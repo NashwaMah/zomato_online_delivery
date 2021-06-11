@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623252525936' stop='1623252525950'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623252525936' status='failed' stop='1623252586893'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('ul[role='menu']')
+                 > |   .child(2)
+                   |   .child(0)
+                   |   .child(0)
+                   |   .child(1)
+                   |   .child(3)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   40 |
+                   41 |    async CheckReviewAdded(resturantDetails)
+                   42 |    {
+                   43 |        const restaurant_exist= Selector("p").withText(resturantDetails.restaurantName)
+                   44 |       await t.click(this.profile_menu)
+                 > 45 |       await t.click(this.reviews_tab)
+                   46 |       await t.wait(10000)
+                   47 |       await common_functions.assertTrue(await restaurant_exist.exists)
+                   48 |
+                   49 |    }
+                   50 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:45:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

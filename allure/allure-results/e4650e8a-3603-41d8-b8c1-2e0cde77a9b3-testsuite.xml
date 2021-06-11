@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598919257386' stop='1598919257400'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598919257386' status='failed' stop='1598919276782'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: json is not defined
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   28 |            const response = await fetch( 'https://cairotest.seal-software.net/seal-logic-connector/api/v1/token', {
+                   29 |                method: 'post',
+                   30 |                body: JSON.stringify(body),
+                   31 |                headers: {'Content-Type': 'application/json'}
+                   32 |            });
+                 > 33 |             json = await response.json().data;
+                   34 |            console.log(json);
+                   35 |        
+                   36 |
+                   37 |        return json
+                   38 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/api-swagger.js:33:14)
+                   at $$testcafe_test_run$$6cTyjEfJy$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$6cTyjEfJy$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

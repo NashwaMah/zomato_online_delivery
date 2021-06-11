@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613565094996' stop='1613565095009'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1613565094996' status='failed' stop='1613565129307'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.150 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('h3[title='Update Seal Metadata Template Form Automation'')
+                
+                Browser: Chrome 88.0.4324.150 / macOS 10.15.7
+                
+                   17 |    }
+                   18 |
+                   19 |    async OpenFormByName(form_name)
+                   20 |    {
+                   21 |      const form=Selector("h3[title='"+form_name+"'")
+                 > 22 |      await t.click(form)
+                   23 |    }
+                   24 |
+                   25 |    async AddNewTextInForm (form_new_name)
+                   26 |    {
+                   27 |       
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/form-page.js:22:15)
+                   at ProcessPage.OpenFormByName (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/form-page.js:20:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/08.SpecifyVariableNamesPropagatedToSubproces.test.js:35:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

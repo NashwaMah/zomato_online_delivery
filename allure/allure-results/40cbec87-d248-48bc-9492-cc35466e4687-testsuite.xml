@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623365339850' stop='1623365339863'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623365339850' status='failed' stop='1623365447035'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                
+                   50 |    async CheckReviewAdded(resturantDetails)
+                   51 |    {
+                   52 |        const restaurant_exist= Selector(restaurant_selectors.pTag).withText(resturantDetails.restaurantName)
+                   53 |       await t.click(this.zomta_homepage)
+                   54 |       await t.click(this.profile_menu)
+                 > 55 |       await t.click(this.reviews_tab)
+                   56 |       await common_functions.assertTrue(await restaurant_exist.exists)
+                   57 |    }
+                   58 |
+                   59 |    async BookmarkRestaurant()
+                   60 |    {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:55:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

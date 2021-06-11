@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613565500221' stop='1613565500233'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1613565500221' status='failed' stop='1613565573138'>
+            <name>get seal document ID and start process check new metadata added in seal when new field is empty</name>
+            <title>get seal document ID and start process check new metadata added in seal when new field is empty</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.150 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[class='clearfix']')
+                
+                Browser: Chrome 88.0.4324.150 / macOS 10.15.7
+                
+                   52 |        }
+                   53 |        if( await this.back_to_process.exists)
+                   54 |        {
+                   55 |            await t.click(this.back_to_process)
+                   56 |        }
+                 > 57 |        await t.click(this.provide_process_info)
+                   58 |        await common_functions.typeText(this.process_name, process_name_value)
+                   59 |        await common_functions.typeText(this.search_query, "id:" + document_id)
+                   60 |        await t.click(this.authenticate)
+                   61 |        await common_functions.typeText(this.authenticate_username, username)
+                   62 |        await common_functions.typeText(this.authenticate_password, password)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/flowable-task.js:57:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602520457588' stop='1602520457600'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602520457588' status='failed' stop='1602520497479'>
+            <name>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</name>
+            <title>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('#logicAppId')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   27 |    {
+                   28 |        const logic_app= Selector ("div[title='"+logic_app_val+"']")
+                   29 |        await t.click(this.results_checkbox)
+                   30 |        await t.click(this.action_btn)
+                   31 |        await t.click(this.run_login_app)
+                 > 32 |        await t.click(this.select_logic_app)
+                   33 |        await t.click(logic_app)
+                   34 |        await t.click(this.run_logic_app)
+                   35 |    }
+                   36 |}
+                   37 |export default ContractsPage
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/contracts-page.js:32:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

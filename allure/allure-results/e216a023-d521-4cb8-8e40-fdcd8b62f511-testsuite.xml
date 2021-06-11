@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599478950053' stop='1599478950066'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1599478950053' status='failed' stop='1599479007763'>
+            <name>SSO authentication_Login to SLE_flowable-modeler</name>
+            <title>SSO authentication_Login to SLE_flowable-modeler</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>An error occurred in Selector code:
+                
+                SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'a[class=''pt-2 btn'' is not a valid selector.
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   87 |        await t.setNativeDialogHandler((...args) => {
+                   88 |            console.log('handler', args);
+                   89 |            return true;
+                   90 |        });
+                   91 |        await t.click(this.service_button)
+                 > 92 |        await t.click(this.refresh_seal_sw)
+                   93 |    }
+                   94 |}
+                   95 |export default SwarmPage
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/swarm-page.js:92:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

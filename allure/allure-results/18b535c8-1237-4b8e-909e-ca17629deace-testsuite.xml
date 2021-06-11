@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623418898025' stop='1623418898046'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623418898025' status='failed' stop='1623418945158'>
+            <name> -----  Sign Up to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Sign Up to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='be550990-0580-4bd7-976f-00e345e694da-attachment.png' type='image/png' size='824184'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                   | Selector('div[class='_3zJzxRam-s-FYVZNqcZ0BW']')
+                 > |   .child('span')
+                   |   .withText('Zomato')
+                   |   .nth(0)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_15-40-28/test-2/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Sign Up to Zomato web app and check logged in successfully -----_errors/1.png
+                
+                    96 |        if (!await this.zomato_email.exists) {
+                    97 |            console.log("mail is not in Other so check Junk folder")
+                    98 |            await t.click(this.junk_email)
+                    99 |        }
+                   100 |        console.log("click on email Link")
+                 > 101 |        await t.click(this.zomato_email.nth(0))
+                   102 |        console.log("click login to zomato button")
+                   103 |        if (type == 'login') {
+                   104 |            console.log("click login to zomato button")
+                   105 |            await t.click(this.zomato_link)
+                   106 |        }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:101:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

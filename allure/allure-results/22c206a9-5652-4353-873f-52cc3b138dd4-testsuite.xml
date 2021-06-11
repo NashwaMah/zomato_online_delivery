@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603017861033' stop='1603017861059'>
+    <name>Migrate using SSO User </name>
+    <title>Migrate using SSO User </title>
+    <test-cases>
+        <test-case start='1603017861033' status='failed' stop='1603017898062'>
+            <name>----- As an SSO user with DS I should not be able to start a migration if I don't have CLM access -----</name>
+            <title>----- As an SSO user with DS I should not be able to start a migration if I don't have CLM access -----</title>
+            <labels>
+                <label name='feature' value='Spring CM || As an SSO user with DS I should not be able to start a migration if I dont have CLM access'/>
+                <label name='story' value='Migrate using SSO User '/>
+                <label name='severity' value='blocker'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || As an SSO user with DS I should not be able to start a migration if I dont have CLM access'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16313'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-433'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('.toggle-guided-search')
+                
+                Browser: Chrome 86.0.4240.80 / macOS 10.15.6
+                
+                    97 |        await this.SaveNewSearch(contract_class)
+                    98 |    }
+                    99 |
+                   100 |    async  SearchWithContractClass(contract_class) {
+                   101 |        const contract_class_value = Selector("div[aria-label='option-" + contract_class + "']")
+                 > 102 |        await t.click(this.guided_search_btn)
+                   103 |            .click(this.contract_class_dropdown)
+                   104 |            .click(contract_class_value)
+                   105 |    }
+                   106 |
+                   107 |    async  SaveNewSearch(contractClass) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:102:17)
+                   at SealContractView.SearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:100:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:96:20)
+                   at SealContractView.CreateNewSearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SEAL-Main/models/pages/Seal-ContractView.js:95:61)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/10.MigrateUsingSSOUser.test.js:41:33)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

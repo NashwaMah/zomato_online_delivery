@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602064089576' stop='1602064089589'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602064089576' status='failed' stop='1602064132557'>
+            <name> Digapp - Check Delete/Enable/Disable Rules from UI </name>
+            <title> Digapp - Check Delete/Enable/Disable Rules from UI </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected false to deeply equal true</message>
+                <stack-trace>AssertionError: expected false to deeply equal true
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   33 |    {
+                   34 |     await t.expect(true).eql(true)
+                   35 |    }
+                   36 |    else
+                   37 |    {
+                 > 38 |     await t.expect(false).eql(true)
+                   39 |    }
+                   40 |    
+                   41 |}
+                   42 |
+                   43 |
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:38:28)
+                   at Object.assertFalse (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/test-helpers/utils/common-functions.js:41:53)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:312:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

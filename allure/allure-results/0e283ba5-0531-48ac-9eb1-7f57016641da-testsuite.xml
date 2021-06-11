@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623368931938' stop='1623368931964'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623368931938' status='failed' stop='1623368951264'>
+            <name> -----  Sign Up to Zomato web app and check logged in successfully -----</name>
+            <title> -----  Sign Up to Zomato web app and check logged in successfully -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='d9b090e9-1496-4667-9938-a2d84bc18e7b-attachment.png' type='image/png' size='132082'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>TypeError: console is not a function
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_01-48-31/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Sign Up to Zomato web app and check logged in successfully -----_errors/1.png
+                
+                   49 |    async loginUsingGmail(credential) {
+                   50 |
+                   51 |        await t.click(this.gmail_btn)
+                   52 |        console.log("Click on Login wth Gmail")
+                   53 |        await common_functions.typeText(this.login_gmail, credential.email)
+                 > 54 |        console("Add user name")
+                   55 |        await t.click(this.login_username_next)
+                   56 |        console.log("add password")
+                   57 |        await common_functions.typeText(this.login_password, credential.password)
+                   58 |        console.log("Confirm Logging")
+                   59 |        await t.click(this.login_password_next)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/login_page.js:54:9)
+                   at $$testcafe_test_run$$Ke5ELqluy$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$Ke5ELqluy$$ (/Users/nashwa.kamal/zomato_online_delivery/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

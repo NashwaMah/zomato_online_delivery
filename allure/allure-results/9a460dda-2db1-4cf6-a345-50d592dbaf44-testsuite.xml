@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598960698514' stop='1598960698532'>
+    <name>create metadata in seal </name>
+    <title>create metadata in seal </title>
+    <test-cases>
+        <test-case start='1598960698514' status='failed' stop='1598960800122'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.83 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[class='ORYX_Editor']')
+                   |   .child(0)
+                   |   .child(2)
+                   |   .child(0)
+                   |   .child(1)
+                   |   .child(7)
+                   |   .with({ visibilityCheck: true })
+                
+                Browser: Chrome 85.0.4183.83 / macOS 10.15.6
+                
+                   29 |        await t.setNativeDialogHandler((...args) => {
+                   30 |            console.log('handler', args);
+                   31 |            return true;
+                   32 |        });
+                   33 |        await this.decision_table.with({ visibilityCheck: true })() 
+                 > 34 |        await t.click(this.decision_table)
+                   35 |        await t.click(this.decision_table_reference.nth(12))
+                   36 |        await t.click(Selector("h4").withText(decision_table_name))
+                   37 |        await t.click(this.save_decision_selection)
+                   38 |        await t.click(this.save_process)
+                   39 |        await t.click(this.save_and_close)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:34:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

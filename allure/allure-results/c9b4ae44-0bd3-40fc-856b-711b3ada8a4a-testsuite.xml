@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598526672211' stop='1598526672227'>
+    <name>Login to flowable modeler and create decision table with type number</name>
+    <title>Login to flowable modeler and create decision table with type number</title>
+    <test-cases>
+        <test-case start='1598526672211' status='failed' stop='1598526708413'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: decision_table_page is not defined
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   101 |        await t.click(this.save_condition)
+                   102 |    }
+                   103 |
+                   104 |    async CreateDecisionTable(decsionTableData)
+                   105 |    {
+                 > 106 |        await decision_table_page.CreateNewDecisionTable(decsionTableData.decisionTableName, decsionTableData.decisionTableKey)
+                   107 |        await decision_table_page.CreateInputCondition(decsionTableData.inputColumnName, decsionTableData.inputVariableName, decsionTableData.inputVariableType, decsionTableData.inputCollection, decsionTableData.inputSealMetadata)
+                   108 |        await decision_table_page.CreateOutputCondition(decsionTableData.outputCoulmnName, decsionTableData.outputVariableName, decsionTableData.outputVariableType, decsionTableData.outputCollection, decsionTableData.outputSealMetadata)
+                   109 |        await decision_table_page.CreateConditionCases(decsionTableData.inputOperator, decsionTableData.inputConditionValue, decsionTableData.outputOperator, decsionTableData.outputConditionValue)
+                   110 |        await decision_table_page.SaveCondition()
+                   111 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:106:9)
+                   at DecisionTablePage.CreateDecisionTable (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:105:5)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:29:31)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

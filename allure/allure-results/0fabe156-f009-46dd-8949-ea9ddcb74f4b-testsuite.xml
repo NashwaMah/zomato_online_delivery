@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602017009392' stop='1602017009417'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602017009392' status='failed' stop='1602017042488'>
+            <name> Digapp - Check Delete/Enable/Disable Rules from UI </name>
+            <title> Digapp - Check Delete/Enable/Disable Rules from UI </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span')
+                   |   .withText('test enable / disable / delete ')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   116 |    }
+                   117 |
+                   118 |    async OpenCreatedApp(name) {
+                   119 |        const search_results_app_name = Selector("span").withText(name)
+                   120 |        await common_functions.typeText(this.search_txt, name)
+                 > 121 |        await t.click(search_results_app_name)
+                   122 |    }
+                   123 |
+                   124 |    async CreateRule(rule_info) {
+                   125 |
+                   126 |        const risk_when_positive = Selector("div[title='" + rule_info.riskWhenPositive + "'")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:121:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

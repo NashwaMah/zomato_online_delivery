@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1601320782470' stop='1601320782489'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1601320782470' status='failed' stop='1601320812240'>
+            <name>DigApp - Regression - Create scorecard from UI </name>
+            <title>DigApp - Regression - Create scorecard from UI </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: ule_info is not defined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   125 |        await t.click( this.list_of_labels_tocheck)
+                   126 |        console.log(rule_info.listofLabels.length)
+                   127 |        
+                   128 |        for (var i=0 ; i&lt;rule_info.listofLabels.length; i++)
+                   129 |        {
+                 > 130 |            var list_of_labels=Selector("label[aria-label='checkbox-"+ule_info.listofLabels[i]+"']")
+                   131 |            await common_functions.typeText(this.filter_txt , rule_info.listofLabels[i])
+                   132 |            await t.click(list_of_labels)
+                   133 |
+                   134 |        }
+                   135 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:130:71)
+                   at $$testcafe_test_run$$OVHyf7Qrj$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)
+                   at $$testcafe_test_run$$OVHyf7Qrj$$ (/Users/nashwa.kamal/seal-e2e-tests/node_modules/testcafe/src/api/test-run-tracker.js:76:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

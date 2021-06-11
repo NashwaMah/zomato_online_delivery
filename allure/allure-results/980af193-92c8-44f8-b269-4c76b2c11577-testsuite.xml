@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602022907999' stop='1602022908013'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1602022907999' status='failed' stop='1602022930917'>
+            <name>get seal document ID and start process check new metadata added in seal </name>
+            <title>get seal document ID and start process check new metadata added in seal </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>ReferenceError: document_id is not defined
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   48 |  //  await t.navigateTo(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].flowableTask)
+                   49 |   // await flowable_login.LoginToFlowable(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   50 |   // await flowable_task.CreateProcess(decisionTableData.appInfo.appName, decisionTableData.Number.processName, document_id, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Username, general_config_json.Swarms[general_config_json.DefaultSwarmChoice].Password)
+                   51 |
+                   52 |    await t.navigateTo(general_config_json.Swarms[general_config_json.DefaultSwarmChoice].sealURL)
+                 > 53 |    await seal_page.SearchWithContractId(document_id)
+                   54 |    await seal_page.GetSealDocumentID()
+                   55 |    await seal_page.CheckMetadataAdded(decisionTableData.Number.outputCoulmnName, decisionTableData.Number.outputConditionForSeal)
+                   56 |    await seal_page.CheckProcessNameAdded(decisionTableData.Number.processName)
+                   57 |
+                   58 |});
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:53:42)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

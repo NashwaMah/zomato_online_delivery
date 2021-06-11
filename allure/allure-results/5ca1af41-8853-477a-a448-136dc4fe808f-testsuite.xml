@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1613738463827' stop='1613738463841'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1613738463827' status='failed' stop='1613738485736'>
+            <name> ----- create new Principle ---- </name>
+            <title> ----- create new Principle ---- </title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 88.0.4324.182 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('li[role='option']')
+                   |   .withText('Domain')
+                
+                Browser: Chrome 88.0.4324.182 / macOS 10.15.7
+                
+                   37 |        if (! await principle_exist.exists) {
+                   38 |            await t.click(this.add_principle_btn)
+                   39 |            await common_functions.typeText(this.principle_name, principle.PrincipleName)
+                   40 |            await t
+                   41 |                .click(this.principle_type_dropdown)
+                 > 42 |                .click(this.principle_type.withText(principle.PrincipleType))
+                   43 |            await common_functions.typeText(this.principle_uri, principle.PrincipleURI)
+                   44 |            await t.click(this.submit_principle)
+                   45 |        }
+                   46 |        else {
+                   47 |            console.log("Principle already exist ")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:42:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

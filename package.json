@@ -1,0 +1,35 @@
+{
+  "name": "zomato_online_delivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome  ./Zomato_Online/tests  --reporter allure,html:HTML-Reports/zomato.html -s takeOnFails=true,path=artifacts/screenshots/zomato,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:firefox": "testcafe firefox  ./Zomato_Online/tests  --reporter allure,html:HTML-Reports/zomato.html -s takeOnFails=true,path=artifacts/screenshots/zomato,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:edge": "testcafe edge  ./Zomato_Online/tests  --reporter allure,html:HTML-Reports/zomato.html -s takeOnFails=true,path=artifacts/screenshots/zomato,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:safari": "testcafe safari  ./Zomato_Online/tests  --reporter allure,html:HTML-Reports/zomato.html -s takeOnFails=true,path=artifacts/screenshots/zomato,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NashwaMah/zomato_online_delivery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NashwaMah/zomato_online_delivery/issues"
+  },
+  "homepage": "https://github.com/NashwaMah/zomato_online_delivery#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "allure": "0.0.0",
+    "allure-commandline": "^2.13.0",
+    "axios": "^0.21.1",
+    "date": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "form-data": "^3.0.0",
+    "testcafe": "^1.8.6",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

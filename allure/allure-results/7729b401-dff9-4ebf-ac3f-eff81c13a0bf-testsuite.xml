@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611060604309' stop='1611060604322'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1611060604309' status='failed' stop='1611060625860'>
+            <name>Switch Account visibilty</name>
+            <title>Switch Account visibilty</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 87.0.4280.141 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected false to deeply equal true</message>
+                <stack-trace>AssertionError: expected false to deeply equal true
+                
+                Browser: Chrome 87.0.4280.141 / macOS 10.15.7
+                
+                   52 |    await
+                   53 |      t.expect(true).eql(true)
+                   54 |  }
+                   55 |  else {
+                   56 |    await
+                 > 57 |      t.expect(false).eql(true)
+                   58 |  }
+                   59 |}
+                   60 |
+                   61 |export async function assertFalse(condition) {
+                   62 |  if (!condition) {
+                
+                   at Object.&lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:57:23)
+                   at Object.assertTrue (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/test-helpers/utils/common-functions.js:59:53)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Principle-Page.js:82:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

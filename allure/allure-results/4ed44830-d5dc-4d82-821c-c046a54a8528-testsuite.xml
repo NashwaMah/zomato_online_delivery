@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605087539803' stop='1605087539825'>
+    <name>Login to DSCLM &amp; Create Instance Test</name>
+    <title>Login to DSCLM &amp; Create Instance Test</title>
+    <test-cases>
+        <test-case start='1605087539803' status='failed' stop='1605087619977'>
+            <name>Create new Instance </name>
+            <title>Create new Instance </title>
+            <labels>
+                <label name='feature' value='Spring CM || Create an instance'/>
+                <label name='story' value='Login to DSCLM &amp; Create Instance Test'/>
+                <label name='severity' value='High'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM || Create an instance'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-12863'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-337'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The element that matches the specified selector is not visible.
+                
+                Browser: Chrome 86.0.4240.183 / macOS 10.15.7
+                
+                   116 |                await t.click(this.metadata_required)
+                   117 |            }
+                   118 |            await t
+                   119 |                .click(this.metadata_value_type)
+                   120 |                //(metaDataMappingSealTDSCLM[i].DSCLMAttributeValueType))
+                 > 121 |                .click(Selector(".ant-select-dropdown-menu-item").nth(0))
+                   122 |                .click(this.metadata_type)
+                   123 |                .click(Selector(this.dsclm_type.child('li').withText(metaDataMappingSealTDSCLM[i].DSCLMAttributeType)))
+                   124 |                .click(this.save_metadata)
+                   125 |        }
+                   126 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/pages/dsclm-Instances-Page.js:121:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

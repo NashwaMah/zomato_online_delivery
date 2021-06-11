@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603871671073' stop='1603871671074'>
+    <name>Login to Swarm</name>
+    <title>Login to Swarm</title>
+    <test-cases>
+        <test-case start='1603871671073' status='passed' stop='1603871678989'>
+            <name>Seal Linux rename SpringCM to DocuSign CLM</name>
+            <title>Seal Linux rename SpringCM to DocuSign CLM</title>
+            <labels>
+                <label name='feature' value='Spring CM ||Seal Linux rename SpringCM to DocuSign CLM'/>
+                <label name='story' value='Login to Swarm'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM ||Seal Linux rename SpringCM to DocuSign CLM'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-14556'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-428'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

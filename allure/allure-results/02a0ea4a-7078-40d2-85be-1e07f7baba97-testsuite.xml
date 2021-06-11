@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603798087386' stop='1603798087403'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1603798087386' status='failed' stop='1603798161717'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 86.0.4240.111 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('span[class='value']')
+                   |   .nth(8)
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   61 |    async AddDataObject(id_field_value,name_field_value  , type_field_value , value_field_value) {
+                   62 |         
+                   63 |        const data_object=  this.decision_table_reference.nth(8)
+                   64 |        //await t.click(this.visual_editor)
+                   65 |        await t.setNativeDialogHandler(() => data_object, { dependencies: { data_object }})
+                 > 66 |        await t.click(this.decision_table_reference.nth(8))
+                   67 |        await t.click(this.add_new_property)
+                   68 |        await common_functions.typeText(this.id_field , id_field_value)
+                   69 |        await common_functions.typeText(this.name_field, name_field_value)
+                   70 |        await t.click(this.type_field)
+                   71 |        await t.click( this.type_value.withText(type_field_value))
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/process-page.js:66:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

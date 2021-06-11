@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600111410394' stop='1600111410416'>
+    <name>Login to Flowable Modeler</name>
+    <title>Login to Flowable Modeler</title>
+    <test-cases>
+        <test-case start='1600111410394' status='failed' stop='1600111461806'>
+            <name>user can specify variable names to be propagated to a subprocess</name>
+            <title>user can specify variable names to be propagated to a subprocess</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.102 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td[class='input-operator-cell htAutocomplete']')
+                   |   .nth(0)
+                
+                Browser: Chrome 85.0.4183.102 / macOS 10.15.6
+                
+                    95 |        await this.CreateOutputConditionCase(output_operator, output_condition, output_condition_type , tr_val) 
+                    96 |    }
+                    97 |
+                    98 |    async CreateInputConditionCase(operator_value, input_condition_value, condition_type , tr_val) {
+                    99 |
+                 > 100 |        await t.click(this.input_operator_list.nth(tr_val))
+                   101 |        const split = operator_value.split(",")
+                   102 |        await t.pressKey('ctrl+a delete')
+                   103 |        for (var i = 0; i &lt; split.length; i++) {
+                   104 |            await t.pressKey(split[i])
+                   105 |            if (i != split.length - 1) {
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:100:17)
+                   at DecisionTablePage.CreateInputConditionCase (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:98:100)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:94:20)
+                   at DecisionTablePage.CreateConditionCases (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:93:166)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:168:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1602506347061' stop='1602506347088'>
+    <name>Login to DigApp</name>
+    <title>Login to DigApp</title>
+    <test-cases>
+        <test-case start='1602506347061' status='failed' stop='1602506384793'>
+            <name>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</name>
+            <title>SLE Workbench Reg || Migrate the workbench page into new LogicApps UI</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 85.0.4183.121 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('h2')
+                   |   .withText('One label list')
+                
+                Browser: Chrome 85.0.4183.121 / macOS 10.15.6
+                
+                   315 |        const activity_name_in_list = Selector("div").withText(rule_info.activity)
+                   316 |        const activity_in_board = Selector("h2").withText(rule_info.activity)
+                   317 |        await t.click(this.add_activity)
+                   318 |        await common_functions.typeText(this.search_txt, rule_info.activity)
+                   319 |        await t.click(activity_name_in_list)
+                 > 320 |        await t.click(activity_in_board)
+                   321 |        switch (rule_info.activity) {
+                   322 |            case "One label list":
+                   323 |                await this.OneLabelList()
+                   324 |                break;
+                   325 |            case "One label list with entity":
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE-Workbench/models/pages/digapp-activities-page.js:320:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

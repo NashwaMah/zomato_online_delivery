@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623406408567' stop='1623406408591'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623406408567' status='failed' stop='1623406502288'>
+            <name> -----  Search for Restaurant and add review -----</name>
+            <title> -----  Search for Restaurant and add review -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='838dae94-88d8-4ae0-ae95-df51f11f890a-attachment.png' type='image/png' size='4566139'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('i[class='rbbb40-1 MxLSp sc-iomxrj krtHzU']')
+                   |   .nth(1)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_12-11-54/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Search for Restaurant and add review -----_errors/1.png
+                
+                   46 |    async CheckReviewAdded(resturantDetails) {
+                   47 |        const restaurant_exist = Selector(common_selectors.pTag).withText(resturantDetails.restaurantName)
+                   48 |        await t.click(this.zomta_homepage)
+                   49 |        console.log("Open Profile Menu")
+                   50 |        await t.wait(1000)
+                 > 51 |        await t.click(this.profile_menu)
+                   52 |        console.log("Open reviews Tab")
+                   53 |        await t.click(this.reviews_tab)
+                   54 |        console.log("Check review added in the review section ")
+                   55 |        await common_functions.assertTrue(await restaurant_exist.exists)
+                   56 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/resturant_page.js:51:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

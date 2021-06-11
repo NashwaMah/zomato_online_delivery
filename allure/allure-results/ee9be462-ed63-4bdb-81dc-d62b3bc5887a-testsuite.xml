@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598619759915' stop='1598619759932'>
+    <name>Login to flowable modeler and create decision table with type Date</name>
+    <title>Login to flowable modeler and create decision table with type Date</title>
+    <test-cases>
+        <test-case start='1598619759915' status='failed' stop='1598619811602'>
+            <name>Create decision Table</name>
+            <title>Create decision Table</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('td[class='htCenter last first htInvalid htAutocomplete currentRow']')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                    96 |        switch (condition_type) {
+                    97 |            case "string":
+                    98 |                await t.doubleClick(this.input_txtbox)
+                    99 |                break;
+                   100 |            case "date":
+                 > 101 |                await t.doubleClick(this.input_condition_date)
+                   102 |
+                   103 |        }
+                   104 |        await t.pressKey(input_condition_value)
+                   105 |
+                   106 |    }
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/decision-table-page.js:101:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

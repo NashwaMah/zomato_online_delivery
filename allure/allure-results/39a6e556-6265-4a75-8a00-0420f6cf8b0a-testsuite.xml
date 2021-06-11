@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603815973889' stop='1603815973900'>
+    <name>Login to DSCLM and View More Details for Migration </name>
+    <title>Login to DSCLM and View More Details for Migration </title>
+    <test-cases>
+        <test-case start='1603815973889' status='failed' stop='1603816058303'>
+            <name>View More Details for Migration </name>
+            <title>View More Details for Migration </title>
+            <labels>
+                <label name='feature' value='Spring CM ||I should be able to view more details related to a started migration'/>
+                <label name='story' value='Login to DSCLM and View More Details for Migration '/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM ||I should be able to view more details related to a started migration'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-16315'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-425'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('a[href='/sie-dsclm/saved-search']')
+                
+                Browser: Chrome 86.0.4240.111 / macOS 10.15.7
+                
+                   14 |
+                   15 | async  OpenMigrationTab() {
+                   16 |  await t.click(this.migration_tab_btn)
+                   17 |}
+                   18 |async OpenSavedSearchTab() {
+                 > 19 |    await t.click(this.savedsearch_tab_btn)
+                   20 |}
+                   21 |async  OpenInstancesTab() {
+                   22 |    await t.click(this.instance_tab_btn)
+                   23 |}
+                   24 |
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/components/sie-dsclm-Menu_Component.js:19:13)
+                   at MenuComponent.OpenSavedSearchTab (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/models/components/sie-dsclm-Menu_Component.js:18:28)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SIE-DSCLM/tests/07.ViewMoreDetailsForMigration.test.js:23:30)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

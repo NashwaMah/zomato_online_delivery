@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598291052457' stop='1598291052476'>
+    <name>Login to Seal and get seal document ID </name>
+    <title>Login to Seal and get seal document ID </title>
+    <test-cases>
+        <test-case start='1598291052457' status='failed' stop='1598291094874'>
+            <name>get seal document ID</name>
+            <title>get seal document ID</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 84.0.4147.135 / macOS 10.15.6'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[aria-label='option-Lease']')
+                
+                Browser: Chrome 84.0.4147.135 / macOS 10.15.6
+                
+                   78 |
+                   79 |    async  SearchWithContractClass(contract_class) {
+                   80 |        const contract_class_value = Selector("div[aria-label='option-" + contract_class + "']")
+                   81 |        await t.click(this.guided_search_btn)
+                   82 |            .click(this.contract_class_dropdown)
+                 > 83 |            .click(contract_class_value)
+                   84 |    }
+                   85 |
+                   86 |    async  SaveNewSearch(contractClass) {
+                   87 |        await t.click(this.save_btn)
+                   88 |        await common_functions.typeText(this.search_name_txt, contractClass + " SEARCH")
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:83:14)
+                   at SealPage.SearchWithContractClass (/Users/nashwa.kamal/seal-e2e-tests/SLE/models/pages/seal-Page.js:79:52)
+                   at &lt;anonymous> (/Users/nashwa.kamal/seal-e2e-tests/SLE/tests/01-TestDecisiontable-"Number".test.js:37:23)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

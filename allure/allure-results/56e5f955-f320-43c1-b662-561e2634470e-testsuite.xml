@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623410421418' stop='1623410421439'>
+    <name>Login to Zomato</name>
+    <title>Login to Zomato</title>
+    <test-cases>
+        <test-case start='1623410421418' status='failed' stop='1623410489702'>
+            <name> -----  Open Go Out For Dinner and book Restaurant -----</name>
+            <title> -----  Open Go Out For Dinner and book Restaurant -----</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 91.0.4472.77 / macOS 10.15.7'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='114188fb-44d9-43a3-bf81-a095edc66881-attachment.png' type='image/png' size='4566139'/>
+            </attachments>
+            <failure>
+                <message>This test has been broken</message>
+                <stack-trace>The specified selector does not match any element in the DOM tree.
+                
+                 > | Selector('div[aclass='s1isp7-1 cxLzvm sc-dZWBBA bBoqAh']')
+                   |   .nth(1)
+                
+                Browser: Chrome 91.0.4472.77 / macOS 10.15.7
+                Screenshot: /Users/nashwa.kamal/zomato_online_delivery/artifacts/screenshots/zomato/2021-06-11_13-19-11/test-1/Chrome_91.0.4472.77_macOS_10.15.7/ -----  Open Go Out For Dinner and book Restaurant -----_errors/1.png
+                
+                   23 |    await t.click(this.signup_btn)
+                   24 |  }
+                   25 |
+                   26 |  async ClickGoOutForMeal()
+                   27 |  {
+                 > 28 |    await t.click(this.go_out_for_meal)
+                   29 |  }
+                   30 |
+                   31 |  async SearchForRestaurant(restuarant_name) {
+                   32 |    console.log("Start search for restaruant ")
+                   33 |    await common_functions.typeText(this.search_txt, restuarant_name)
+                
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/home_page.js:28:13)
+                   at HomePage.ClickGoOutForMeal (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/models/pages/home_page.js:27:3)
+                   at &lt;anonymous> (/Users/nashwa.kamal/zomato_online_delivery/Zomato_Online/tests/4.BookDinner.test.js:23:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

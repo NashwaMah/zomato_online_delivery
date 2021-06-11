@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1603017698101' stop='1603017698102'>
+    <name>Login to DSCLM</name>
+    <title>Login to DSCLM</title>
+    <test-cases>
+        <test-case start='1603017698101' status='passed' stop='1603017733280'>
+            <name>------ As a user I should be able to stop migration process once started ----- </name>
+            <title>------ As a user I should be able to stop migration process once started ----- </title>
+            <labels>
+                <label name='feature' value='Spring CM ||As a user I should be able to stop migration process once started '/>
+                <label name='story' value='Login to DSCLM'/>
+                <label name='severity' value='medium'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Spring CM ||As a user I should be able to stop migration process once started '/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/SEAL-11879'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/QRT-277'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
