@@ -9,8 +9,7 @@ class HomePage {
     this.login_btn = Selector(common_selectors.aTag).withText(homepage_selectors.LoginLinkTest)
     this.search_txt = Selector(homepage_selectors.searchText)
     this.signup_btn = Selector(common_selectors.aTag).withText(homepage_selectors.signUplink)
-    //this.go_out_for_meal= Selector("div[aclass='s1isp7-1 cxLzvm sc-dZWBBA bBoqAh']").nth(1)
-    this.go_out_for_meal=Selector(common_selectors.pTag).withText(homepage_selectors.goOutForaMeal)
+    this.go_out_for_meal = Selector(common_selectors.pTag).withText(homepage_selectors.goOutForaMeal)
   }
 
   async ClickLogin() {
@@ -23,8 +22,7 @@ class HomePage {
     await t.click(this.signup_btn)
   }
 
-  async ClickGoOutForMeal()
-  {
+  async ClickGoOutForMeal() {
     await t.click(this.go_out_for_meal)
   }
 
