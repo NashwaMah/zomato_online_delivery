@@ -12,21 +12,11 @@ class RestaurantPage {
         this.dining_rate = Selector(common_selectors.div).withText(restaurant_selectors.addReview).parent(restaurant_selectors.section).nextSibling(restaurant_selectors.section).child(restaurant_selectors.section).child(restaurant_selectors.section).child(restaurant_selectors.section).child(restaurant_selectors.diningRateChild)
         this.dining = Selector(restaurant_selectors.dining)
         this.review_reason = Selector(common_selectors.div).withText(restaurant_selectors.searchTag).nextSibling(common_selectors.input)
-
-        // user menu 
-        this.profile_menu = Selector(restaurant_selectors.profileMenu)
-        this.reviews_tab = Selector(restaurant_selectors.reviewTab).child(common_selectors.liTag).child(0).child(0).child(1).child(3)
-        this.bookmark_tab = Selector(restaurant_selectors.reviewTab).child(common_selectors.liTag).child(0).child(0).child(1).child(2)
-        this.profile_tab = Selector(restaurant_selectors.reviewTab).child(common_selectors.liTag).child(0).child(0).child(1).child(0)
-
         // confirm review 
         this.confirm_review = Selector(restaurant_selectors.confirmReviewParent).child(common_selectors.button).child(common_selectors.span).child(common_selectors.span).withText(restaurant_selectors.addReview)
-        this.zomta_homepage = Selector(restaurant_selectors.zomatoHomePagelink)
-
         //////bookmark restaurant
         this.bookmark_btn = Selector(common_selectors.span).withText(restaurant_selectors.bookmark)
         this.bookmark_icon = Selector(restaurant_selectors.bookmarkIcon)
-
         /// book table
         this.date_dropdown = Selector(common_selectors.span).withText(restaurant_selectors.SelectDate)
         this.guests_dropdown = Selector(common_selectors.span).withText(restaurant_selectors.SelectGuests)
@@ -53,34 +43,11 @@ class RestaurantPage {
         await t.click(this.confirm_review)
     }
 
-    async CheckReviewAdded(resturantDetails) {
-        const restaurant_exist = Selector(common_selectors.pTag).withText(resturantDetails.restaurantName)
-        await t.click(this.zomta_homepage)
-        console.log("Open Profile Menu")
-        await t.wait(1000)
-        await t.click(this.profile_menu)
-        console.log("Open reviews Tab")
-        await t.click(this.reviews_tab)
-        console.log("Check review added in the review section ")
-        await common_functions.assertTrue(await restaurant_exist.exists)
-    }
-
     async BookmarkRestaurant() {
         console.log("Book mark the Restaurant ")
         if (!await this.bookmark_icon.exists) {
             await t.click(this.bookmark_btn)
         }
-    }
-
-    async CheckRestaurantBookmarked(resturantDetails) {
-        const restaurant_exist = Selector(common_selectors.aTag).withText(resturantDetails.restaurantName)
-        await t.click(this.zomta_homepage)
-        console.log("Open profile menu ")
-        await t.click(this.profile_menu)
-        console.log("open bookmarks Tab")
-        await t.click(this.bookmark_tab)
-        console.log("check restaurant bookmarked added correctly ")
-        await common_functions.assertTrue(await restaurant_exist.exists)
     }
 
     async FillBookDetails(book_restaurant_details) {
@@ -97,20 +64,6 @@ class RestaurantPage {
         await t.click(this.book_btn)
         return this.restaruant_name.innerText
     }
-
-    async CheckRestaurantBooked(restaurant_name) {
-        const restaurant_exist = Selector(common_selectors.div).withText(restaurant_name)
-        await t.click(this.zomta_homepage)
-        console.log("Open Profile Menu")
-        await t.wait(1000)
-        await t.click(this.profile_menu)
-        console.log("Open my bookings Tab")
-        await t.click(this.profile_tab)
-        console.log("Check Restaurant added in my booking section ")
-        await t.click(this.your_bookings)
-        await common_functions.assertTrue(await restaurant_exist.exists)
-    }
-
 
 }
 

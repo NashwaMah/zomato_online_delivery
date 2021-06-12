@@ -6,5 +6,6 @@
     "liTag":"li",
     "div":"div",
     "input":"input",
-    "label":"label"
+    "label":"label",
+    "h2":"h2"
 }
