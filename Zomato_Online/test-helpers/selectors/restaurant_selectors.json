@@ -17,5 +17,7 @@
     "phone":"input[name='phone']",
     "phoneCode":"input[name='isdCode']",
     "bookBtn":".sc-1kx5g6g-1",
-    "restaurantName":"h1[class='sc-7kepeu-0 sc-cpmLhU iywipP']"
+    "restaurantName":"h1[class='sc-7kepeu-0 sc-cpmLhU iywipP']",
+    "book":"Book",
+    "selectTime":"Select time"
 }

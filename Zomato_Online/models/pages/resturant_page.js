@@ -20,11 +20,10 @@ class RestaurantPage {
         /// book table
         this.date_dropdown = Selector(common_selectors.span).withText(restaurant_selectors.SelectDate)
         this.guests_dropdown = Selector(common_selectors.span).withText(restaurant_selectors.SelectGuests)
-        this.select_time = Selector("h4").withText("Select time").nextSibling("ul").child("li").nth(0),
+        this.select_time = Selector(common_selectors.h4).withText(restaurant_selectors.selectTime).nextSibling(common_selectors.ulTag).child(common_selectors.liTag).nth(0),
         this.phone_number = Selector(restaurant_selectors.phone)
         this.phone_code = Selector(restaurant_selectors.phoneCode)
-        this.book_btn = Selector(restaurant_selectors.bookBtn).child(common_selectors.span).child(common_selectors.span).withText("Book")
-        this.your_bookings = Selector("h2").withText("Your Bookings")
+        this.book_btn = Selector(restaurant_selectors.bookBtn).child(common_selectors.span).child(common_selectors.span).withText(restaurant_selectors.book)
         this.restaruant_name = Selector(restaurant_selectors.restaurantName)
 
     }
